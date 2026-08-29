@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>全系統管理</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="全系統管理">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#09090B">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAN6klEQVR4nO2dvZLdthXHDzVSofGMXTuuIuUF0tp+hVixS3eekcskhfQYcuGklGbSpbQj5xWctHmBaFU5eYjVzE2BFS8uvnhwvnDAy/+o0O6SAAj8+D8gABLLw4cfwJXpwYP7tBNvb9/JlsS5iNU0i4ocnE4nwdR2TMze4Ejaj8xBUcXUkhz3xMpO4IhbSBaITcXZLcuylmQHlEwMx0AgaoqLERdvUlCmhGOtdydMFLWWbbWT6RCZCY4pmMi1lna6iDMHHKFa52IiV0KJf0RcwzGpVWwqXI5/I3EKx16xiBUuzXOPxB0c+4ggeHmONY7guAa3aOh0OnlzkXujC3Cn1TCuk4yg9fLJsz+yGl+Ia4sjm4r5GGshg53jwYP7V+4WNYVqGWshw/I+DAOjlY8hFjLGOQ7DwGughVhneRgGTUMsxNQ5DjI4sn+QscsphBKz7NoiFGRZFMrRqZUPG/+wgGO4YYjknCcyChezEKMeVkaRcTqd/82bRT1rixCjm7pxKBkYteKsbRzFIMQowmFJRn8+hIJh2zwUxgwRPT604LAhA52DSEnyRFrtv5ZNmxI9PlT6HAZkICL9KfqnVQpMFgadEqVRMnk4tMnYqmttIIj5aiOiwYcwHKpkNOt3FBO5WiVRfnoS5kMSDj0yEFg41ABEZPkQg0OJjDmxiGWNiCAfMnDokVH7ywxYxGohIp+ZEB8CcGiQUb+rpsMiVrnwGhYiwgcXDiUyir+eGYtYVUSEs2HzwYJD49m6VEe7wSJW4aI0QgynjbitK2gbdcNQ0X/+/iX+4N/8/kedUpySYVbZoffwugP59IX82SfZgGJARhcNbUmzUmg/wUH3ZVlog+tEOPTJkElcEIia5EBJcRjOBwUO2SUaGmQYMJFLghItPkJw6eWDCIdbMoZgEYuNiCIf6nBokkFPlsDE4ycdrfjmdXf6PEouiBjFRx8cDsnAY9FFQ1t4VhiIjOdjDByWZAgykQtDiSs+tOBwRcYmFqpM5NqkhIrISD6wcPgho40FmYlffv5D/OMnn/+Flk6bEhIiw/gwhUOVDCksYmkg4oEPSTick6GBRSxxRGbhYxsOkSEvJhnGhpHLh4VI8oEZFkPNyo59x7VhGP1koNaLC57YKOTY8TpMm27AITIpz7ENoVCStusvP/+x5/Tk+G5KhPi4yFHkhm2377ZzDAwoxbrrMQyaSeDVkX6t2AP52GzZFhz8fqgGGcicG3n12gbirA5E8l+O5aNhHl4+NZmIQcbAZWOorCX4MFIVDn5vg2wbVDKcrCbcLgabD+HOR62tW87BiSmCZOA6GR6wiLXNR35RQ/hotLJNWGGRIZi+rSghhsyHhspwMLuitFNJcZcSSj75/M/9GdHOohSP1v9gmkcxshg4B73UW7ZBSZn8BhHj1aPWabzZY13zKMDhxDbEyYhb91ef9dnAejwVkT4+nJiHtnOgyqtKhsY33UhpKvGhaB7CcBDaQI+MdvvhzaNxZCci6v4hew+kTiL6QooG1B1kbCq0+n//WR36RAJ0OuHnSE/4D8+hJZNm/m2xdMqeAwdhbKPTNlAFoxU/QaS3UxKERqR6XD7Fj5vZl5nNTxZ5XDiH6IvRlCYaRQYA/O2v/1j///zVW1oiaAup3uuPn/xIeA1C0JBi80j7HHK2sS3xAZ+hy056y8CaTBAqQ37ixZlKTyviAQWRpQMygpglofZM5a/fy6wsM6D4ISMIV57qQcbvVdR0hkOuK0qxjUbanbl7EZOPRL3mwYksa9fThXPUb5RZyQji8OHBPATgGNg8Uu/tZi10klodMnXl3MEh9xDbHVPItsF/kwZBgAAliHKizMOyWxp4ODuHnz22MOLMDJLam0XJVFV7JsG6zzF6Pomf7MiCGS815cLR+5ySiNbtok6aC84ZURYMEESqH4FnliAXTyuZWtckvpwin1nFzciL8+Eu9twDw/22Bi3Ar17aJgFbBwxoTps6DKMdI52D4Jn9DJdP6FqH0Ty4r0CEe3DggAcLDmaHo5aqUDrlpBTWkOoWmJkOJyRY72VvqDIZRf3vX3+Kf/z6GwCAjz/9vphCaVJebMbclZaHDz8g9zm6nIM/9sVcs5mfnjBRU05JiY8OOJprPsp/SxZ5IFYAndOhrf1ZlsXb04pWbCKTUTyyhKnDqMqVNziq4qzj5ZBRO57DxywDpveMdxT3oF4yOGfNq9PpRHcOnUcVeSXkc9o4Odf3PSXwwGIUVtC9Ub5aNcG/+7dS0OKFNEPLlas+h3zNxjeNVFyI09ExDy+O5AqOqnwbOEVTXNEccKB12Q8yaQDOd8+ca2dwVCX7rHElTy7XAschgg44DlV1wHGoqgOOQ1UdcByq6oDjUFXXAkdx5Y6T1NxqZ3CobLe5kWW2S7BFriaaAw5mM3/37aPvvn0kVJa7BJkp2IDLlCs45CssxiL+sBNHIZ2QrE4bewFn+fDDjwwWkAJ21l5kAendoS+eFu7vr7/5HT6hXDlhz1/dRD+hvxjXuYy0fw0p8JeR0p3jMj8vsAe9ePooJ+PZy5tnL284fcniucW8HIhLBgDcv71953+l4JvXX8U/Pvrih9qRL57+Ov/ls5fxzQ0ff/o9YeYskPHs5U2xwxH4aHyG8Oani0t4/KR6CU60LIu3VxPSRBIsYiWIFLGA97bPXGOce0atT5rzkWARq4KISFgReDXBGxzndBpYxAqIFMm47A2ovLdSCygBkQYWsS4RcfTeih0c0GMeSDKCfvjp38lvnr96y3njLajWO8nruojIV1/8tpxZSREfXnqjy7Ls7XXIyNWXnI9lKfOB76UWK/r5q7e1oDa1WOMcOg8sS5dtQHSPZvG+9NbiQr6TaicuIes49y7bgLNTitXh+X+MJEc6x5vXX0q9o1B/TCj4B7yvMmQsxY9JhGLIugjpU+gyugcAt7fvFpPhXEywpNVFs+tXvbRNF9k6oPy3XtsIQvolrsPBVdg+YW99jorK/nH3N+J94WvcT0PcuRVmt8PQMxfRiG5EBql+ZDocYD/xZuOKdfEbdaRhGNfeGQ6bbocDLaRbn3bWlFpJuIMj3ryJmfLmEQn+iXPSnl8asy11YdqbwgSpMIULZ459cRR4EOiQ1kaW5tE+/YAfCVws9mGaB+1OVVVvkTZtY4jOcHBGO3qfWWQ7VtfQWbKZT4HLDSJdOAcwzCNMWXnjY1k6Vmz4tA1I9pV1uKlso5ry2nfS9UlIbQx9Fu8BP1vLpnAAY+MVwlfCkIs8Ml+p3pTD+ai1SoJIwxpJDykgFVMgenQ9dqSW1M52pJbscxDKlF95M9yiMiBPynPUk6k4GWlJpJTCITpDq9FE6BYw5KMnr5F1spHKpW2A+NOKvnlAFx/aiHRm0TrUm22A/qMsqrB6fMD79pOtNVKaSmQo4l+AgxlZaKeq8nF3ggQi1ETUPQN4tpHHFDAZBKMXWZwPiG56ZDP3Hl9Mo/E33niXbtQsw+HEPDBZMSsoafv8H0+U4jmxDbAaPscWvD+49KVvq+1S8QKK+lWng2CrmKOlwPi0b/Gr74jZltGDoxfaaLki9GQymLYBlQU9VefgL/8hf/KmWEcIC3GyUmu7GH7ICKq1tZdZ2URUPmAoIqis2WTYqQUHf7SU870sBh9gjgg2OwkyJG2j1hW9+2utzxHE73kAb1+B2q4znavFlLojHS1Tw3osGdDsP2yEFZGFx+L+Ad3DA4uol3Sn5pCMoHb7bjgHODAPaO5axXvbFlkMlXG8/n6GqW0ABg7gLfJYxd+0RijE2EnIMIKEbaPd27g7BgMHuOcDnCEiahgwhAwwhgOU+QAHiLQ7Qx7IAHE4wBMfgNg705iSzQ4ydSRjGBnQBQc44wNw26uqUoJ5aGIMcI0kA0bBAbZ8BAlSgn+QdkUGqMIBLvkA0g7NXawQVl3wRsTHkwEEOECXD2COZtrs490Qe5YkGzEcRAaQ4QD2sNgqcT5gECISk2eKZED/eDcFDhA1D9DhI8iAErkJVS0ygGQbQIYDLPgA2QkzQVCkZ9gLFAwnAzhwwIR8xOpiRXO9hVMygA8HyHU+gvRCjEsphhKgdjVWsVaCyX1J7KxS7ThZ/yerwkVpvJ/HaSPuMkGNrx/XPzG+D0TKFyJOBiegBAmsIVXiY4+IVLFwSAZILTBW+np6PcnpEKkWWCOUiJABgqvP9fiYHJEWFp7JANlXE/R2X5gTEWssQJQMEH9vRXV3DgQiHihplUT1kyGyZIDGS03au7ds1e8oSjby1f6SjDgZoPTGm8HuPoi6XvRBQWVh8oEheTJAbxsvm72M10rfyidvHELB+lrY7KNkSmSA6h5vlntdh5boyUo38JlJjwzQ3gAw8AHS8y81xa1i/DXSER+3ZM2bYKT+ln0ovf1OP3Jf5xmZRT1rdTLAZuvQcA1mISZX3niEgtgTUJNqKIlltzukcYhpy09Ld8nGMFaZfrxlVIjZh4zJAPsdqYeHmEllFkpijfnsUxglOywEo1BR9mTAwL3sDwvBaBQWQYM/GHdYSE0DDWPV+L3sVwsBHw8yw2Xf8azJy6cm1weZa3aR9fI9kAEenGPVaiHLslyhhbjCIsgRHEFxlIErCDSrU7rCIsgdHEGxi8BOEfGMRZBTOILWWttZd9VhBCnKNRyr9hFr/FtFojngCEqMBCahZDomVs0Ex6qkRwIuKYmfyafDImhKOILiGl+9BIaCsgMgYk0MR6w44sQtZABKMmq3AyZW7QSOVUnbxI6yikxMcfR2TzQk+j+faWtdyGI2KAAAAABJRU5ErkJggg==">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIuWFqOezu+e1seeuoeeQhiIsICJzaG9ydF9uYW1lIjogIuWFqOezu+e1seeuoeeQhiIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjMDkwOTBCIiwgInRoZW1lX2NvbG9yIjogIiMwOTA5MEIiLCAic3RhcnRfdXJsIjogIi4iLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFMUUFBQUMwQ0FJQUFBQ3lyNUZsQUFBTjZrbEVRVlI0bk8yZHZaTGR0aFhIRHpWU29mR01YVHV1SXVVRjB0cCtoVml4UzNlZWtjc2toZlFZY3VHa2xHYlNwYlFqNXhXY3RIbUJhRlU1ZVlqVnpFMkJGUzh1dm5od3ZuREF5LytvME82U0FBajgrRDhnQUJMTHc0Y2Z3Slhwd1lQN3RCTnZiOS9KbHNTNWlOVTBpNG9jbkU0bndkUjJUTXplNEVqYWo4eEJVY1hVa2h6M3hNcE80SWhiU0JhSVRjWFpMY3V5bG1RSGxFd014MEFnYW9xTEVSZHZVbENtaEdPdGR5ZE1GTFdXYmJXVDZSQ1pDWTRwbU1pMWxuYTZpRE1ISEtGYTUySWlWMEtKZjBSY3d6R3BWV3dxWEk1L0kzRUt4MTZ4aUJVdXpYT1B4QjBjKzRnZ2VIbU9OWTdndUFhM2FPaDBPbmx6a1h1akMzQ24xVEN1azR5ZzlmTEpzeit5R2wrSWE0c2ptNHI1R0dzaGc1M2p3WVA3Vis0V05ZVnFHV3Nody9JK0RBT2psWThoRmpMR09RN0R3R3VnaFZobmVSZ0dUVU1zeE5RNURqSTRzbitRc2NzcGhCS3o3Tm9pRkdSWkZNclJxWlVQRy8rd2dHTzRZWWprbkNjeUNoZXpFS01lVmthUmNUcWQvODJiUlQxcml4Q2ptN3B4S0JrWXRlS3NiUnpGSU1Rb3dtRkpSbjgraElKaDJ6d1V4Z3dSUFQ2MDRMQWhBNTJEU0VueVJGcnR2NVpObXhJOVBsVDZIQVprSUNMOUtmcW5WUXBNRmdhZEVxVlJNbms0dE1uWXFtdHRJSWo1YWlPaXdZY3dIS3BrTk90M0ZCTzVXaVZSZm5vUzVrTVNEajB5RUZnNDFBQkVaUGtRZzBPSmpEbXhpR1dOaUNBZk1uRG9rVkg3eXd4WXhHb2hJcCtaRUI4Q2NHaVFVYitycHNNaVZybndHaFlpd2djWERpVXlpcitlR1l0WVZVU0VzMkh6d1lKRDQ5bTZWRWU3d1NKVzRhSTBRZ3luamJpdEsyZ2JkY05RMFgvKy9pWCs0Ti84L2tlZFVweVNZVmJab2Zmd3VnUDU5SVg4MlNmWmdHSkFSaGNOYlVtelVtZy93VUgzWlZsb2crdEVPUFRKa0VsY0VJaWE1RUJKY1JqT0J3VU8yU1VhR21RWU1KRkxnaEl0UGtKdzZlV0RDSWRiTW9aZ0VZdU5pQ0lmNm5Cb2trRlBsc0RFNHljZHJmam1kWGY2UEVvdWlCakZSeDhjRHNuQVk5RkZRMXQ0VmhpSWpPZGpEQnlXWkFneWtRdERpU3MrdE9Cd1JjWW1GcXBNNU5xa2hJcklTRDZ3Y1BnaG80MEZtWWxmZnY1RC9PTW5uLytGbGs2YkVoSWl3L2d3aFVPVkRDa3NZbWtnNG9FUFNUaWNrNkdCUlN4eFJHYmhZeHNPa1NFdkpobkdocEhMaDRWSThvRVpGa1BOeW81OXg3VmhHUDFrb05hTEM1N1lLT1RZOFRwTW0yN0FJVElwejdFTm9WQ1N0dXN2UC8reDUvVGsrRzVLaFBpNHlGSGtobTIzNzdaekRBd294YnJyTVF5YVNlRFZrWDZ0MkFQNTJHelpGaHo4ZnFnR0djaWNHM24xMmdiaXJBNUU4bCtPNWFOaEhsNCtOWm1JUWNiQVpXT29yQ1g0TUZJVkRuNXZnMndiVkRLY3JDYmNMZ2FiRCtIT1I2MnRXODdCaVNtQ1pPQTZHUjZ3aUxYTlIzNVJRL2hvdExKTldHR1JJWmkrclNnaGhzeUhoc3B3TUx1aXRGTkpjWmNTU2o3NS9NLzlHZEhPb2hTUDF2OWdta2N4c2hnNEI3M1VXN1pCU1puOEJoSGoxYVBXYWJ6WlkxM3pLTURoeERiRXlZaGI5MWVmOWRuQWVqd1ZrVDQrbkppSHRuT2d5cXRLaHNZMzNVaHBLdkdoYUI3Q2NCRGFRSStNZHZ2aHphTnhaQ2NpNnY0aGV3K2tUaUw2UW9vRzFCMWtiQ3EwK24vL1dSMzZSQUowT3VIblNFLzREOCtoSlpObS9tMnhkTXFlQXdkaGJLUFRObEFGb3hVL1FhUzNVeEtFUnFSNlhEN0ZqNXZabDVuTlR4WjVYRGlINkl2UmxDWWFSUVlBL08ydi8xai8vL3pWVzFvaWFBdXAzdXVQbi94SWVBMUMwSkJpODBqN0hISzJzUzN4QVoraHkwNTZ5OENhVEJBcVEzN2l4WmxLVHl2aUFRV1JwUU15Z3BnbG9mWk01YS9meTZ3c002RDRJU01JVjU3cVFjYnZWZFIwaGtPdUswcXhqVWJhbmJsN0VaT1BSTDNtd1lrc2E5ZlRoWFBVYjVSWnlRamk4T0hCUEFUZ0dOZzhVdS90WmkxMGtsb2RNblhsM01FaDl4RGJIVlBJdHNGL2t3WkJnQUFsaUhLaXpNT3lXeHA0T0R1SG56MjJNT0xNREpMYW0wWEpWRlY3SnNHNnp6RjZQb21mN01pQ0dTODE1Y0xSKzV5U2lOYnRvazZhQzg0WlVSWU1FRVNxSDRGbmxpQVhUeXVaV3Rja3Zwd2luMW5GemNpTDgrRXU5dHdEdy8yMkJpM0FyMTdhSmdGYkJ3eG9UcHM2REtNZEk1MkQ0Sm45REpkUDZGcUgwVHk0cjBDRWUzRGdnQWNMRG1hSG81YXFVRHJscEJUV2tPb1dtSmtPSnlSWTcyVnZxRElaUmYzdlgzK0tmL3o2R3dDQWp6Lzl2cGhDYVZKZWJNYmNsWmFIRHo4Zzl6bTZuSU0vOXNWY3M1bWZuakJSVTA1SmlZOE9PSnByUHNwL1N4WjVJRllBbmRPaHJmMVpsc1hiMDRwV2JDS1RVVHl5aEtuRHFNcVZOemlxNHF6ajVaQlJPNTdEeHl3RHB2ZU1keFQzb0Y0eU9HZk5xOVBwUkhjT25VY1ZlU1hrYzlvNE9kZjNQU1h3d0dJVVZ0QzlVYjVhTmNHLys3ZFMwT0tGTkVQTGxhcytoM3pOeGplTlZGeUkwOUV4RHkrTzVBcU9xbndiT0VWVFhORWNjS0IxMlE4eWFRRE9kOCtjYTJkd1ZDWDdySEVsVHk3WEFzY2hnZzQ0RGxWMXdIR29xZ09PUTFVZGNCeXE2b0RqVUZYWEFrZHg1WTZUMU54cVozQ29iTGU1a1dXMlM3QkZyaWFhQXc1bU0zLzM3YVB2dm4wa1ZKYTdCSmtwMklETGxDczQ1Q3NzeGlMK3NCTkhJWjJRckU0YmV3Rm4rZkREand3V2tBSjIxbDVrQWVuZG9TK2VGdTd2cjcvNUhUNmhYRGxoejEvZFJEK2h2eGpYdVl5MGZ3MHA4SmVSMHAzak1qOHZzQWU5ZVBvb0orUFp5NXRuTDI4NGZjbml1Y1c4SEloTEJnRGN2NzE5NTMrbDRKdlhYOFUvUHZyaWg5cVJMNTcrT3YvbHM1Znh6UTBmZi9vOVllWXNrUEhzNVUyeHd4SDRhSHlHOE9hbmkwdDQvS1I2Q1U2MExJdTNWeFBTUkJJc1lpV0lGTEdBOTdiUFhHT2NlMGF0VDVyemtXQVJxNEtJU0ZnUmVEWEJHeHpuZEJwWXhBcUlGTW00N0Eyb3ZMZFNDeWdCa1FZV3NTNFJjZlRlaWgwYzBHTWVTREtDZnZqcDM4bHZucjk2eTNuakxhaldPOG5ydW9qSVYxLzh0cHhaU1JFZlhucWp5N0xzN1hYSXlOV1huSTlsS2ZPQjc2VVdLL3I1cTdlMW9EYTFXT01jT2c4c1M1ZHRRSFNQWnZHKzlOYmlRcjZUYWljdUllczQ5eTdiZ0xOVGl0WGgrWCtNSkVjNng1dlhYMHE5bzFCL1RDajRCN3l2TW1Rc3hZOUpoR0xJdWdqcFUrZ3l1Z2NBdDdmdkZwUGhYRXl3cE5WRnMrdFh2YlJORjlrNm9QeTNYdHNJUXZvbHJzUEJWZGcrWVc5OWpvcksvbkgzTitKOTRXdmNUMFBjdVJWbXQ4UFFNeGZSaUc1RUJxbCtaRG9jWUQveFp1T0tkZkViZGFSaEdOZmVHUTZiYm9jRExhUmJuM2JXbEZwSnVJTWozcnlKbWZMbUVRbitpWFBTbmw4YXN5MTFZZHFid2dTcE1JVUxaNDU5Y1JSNEVPaVExa2FXNXRFKy9ZQWZDVndzOW1HYUIrMU9WVlZ2a1RadFk0ak9jSEJHTzNxZldXUTdWdGZRV2JLWlQ0SExEU0pkT0Fjd3pDTk1XWG5qWTFrNlZtejR0QTFJOXBWMXVLbHNvNXJ5Mm5mUzlVbEliUXg5RnU4QlAxdkxwbkFBWStNVndsZkNrSXM4TWwrcDNwVEQrYWkxU29KSXd4cEpEeWtnRlZNZ2VuUTlkcVNXMU01MnBKYnNjeERLbEY5NU05eWlNaUJQeW5QVWs2azRHV2xKcEpUQ0lUcERxOUZFNkJZdzVLTW5yNUYxc3BIS3BXMkErTk9Ldm5sQUZ4L2FpSFJtMFRyVW0yMkEvcU1zcXJCNmZNRDc5cE90TlZLYVNtUW80bCtBZ3hsWmFLZXE4bkYzZ2dRaTFFVFVQUU40dHBISEZEQVpCS01YV1p3UGlHNTZaRFAzSGw5TW8vRTMzbmlYYnRRc3crSEVQREJaTVNzb2FmdjhIMCtVNGpteERiQWFQc2NXdkQrNDlLVnZxKzFTOFFLSytsV25nMkNybUtPbHdQaTBiL0dyNzRqWmx0R0RveGZhYUxraTlHUXltTFlCbFFVOVZlZmdMLzhoZi9LbVdFY0lDM0d5VW11N0dIN0lDS3ExdFpkWjJVUlVQbUFvSXFpczJXVFlxUVVIZjdTVTg3MHNCaDlnamdnMk93a3lKRzJqMWhXOSsydXR6eEhFNzNrQWIxK0IycTR6bmF2RmxMb2pIUzFUdzNvc0dkRHNQMnlFRlpHRngrTCtBZDNEQTR1b2wzU241cENNb0hiN2JqZ0hPREFQYU81YXhYdmJGbGtNbFhHOC9uNkdxVzBBQmc3Z0xmSll4ZCswUmlqRTJFbklNSUtFYmFQZDI3ZzdCZ01IdU9jRG5DRWlhaGd3aEF3d2hnT1UrUUFIaUxRN1F4N0lBSEU0d0JNZmdOZzcwNWlTelE0eWRTUmpHQm5RQlFjNDR3TncyNnVxVW9KNWFHSU1jSTBrQTBiQkFiWjhCQWxTZ24rUWRrVUdxTUlCTHZrQTBnN05YYXdRVmwzd1JzVEhrd0VFT0VDWEQyQ09adHJzNDkwUWU1WWtHekVjUkFhUTRRRDJzTmdxY1Q1Z0VDSVNrMmVLWkVEL2VEY0ZEaEExRDlEaEk4aUFFcmtKVlMweWdHUWJRSVlETFBnQTJRa3pRVkNrWjlnTEZBd25Bemh3d0lSOHhPcGlSWE85aFZNeWdBOEh5SFUrZ3ZSQ2pFc3BoaEtnZGpWV3NWYUN5WDFKN0t4UzdUaFoveWVyd2tWcHZKL0hhU1B1TWtHTnJ4L1hQekcrRDBUS0Z5Sk9CaWVnQkFtc0lWWGlZNCtJVkxGd1NBWklMVEJXK25wNlBjbnBFS2tXV0NPVWlKQUJncXZQOWZpWUhKRVdGcDdKQU5sWEUvUjJYNWdURVdzc1FKUU1FSDl2UlhWM0RnUWlIaWhwbFVUMWt5R3laSURHUzAzYXU3ZHMxZThvU2pieTFmNlNqRGdab1BUR204SHVQb2k2WHZSQlFXVmg4b0VoZVRKQWJ4c3ZtNzJNMTByZnlpZHZIRUxCK2xyWTdLTmtTbVNBNmg1dmxudGRoNWJveVVvMzhKbEpqd3pRM2dBdzhBSFM4eTgxeGExaS9EWFNFUiszWk0yYllLVCtsbjBvdmYxT1AzSmY1eG1aUlQxcmRUTEFadXZRY0ExbUlTWlgzbmlFZ3RnVFVKTnFLSWxsdHp1a2NZaHB5MDlMZDhuR01GYVpmcnhsVklqWmg0ekpBUHNkcVllSG1FbGxGa3BpamZuc1V4Z2xPeXdFbzFCUjltVEF3TDNzRHd2QmFCUVdRWU0vR0hkWVNFMEREV1BWK0wzc1Z3c0JIdzh5dzJYZjhhekp5NmNtMXdlWmEzYVI5Zkk5a0FFZW5HUFZhaUhMc2x5aGhiakNJc2dSSEVGeGxJRXJDRFNyVTdyQ0lzZ2RIRUd4aThCT0VmR01SWkJUT0lMV1d0dFpkOVZoQkNuS05SeXI5aEZyL0Z0Rm9qbmdDRXFNQkNhaFpEb21WczBFeDZxa1J3SXVLWW1meWFmREltaEtPSUxpR2wrOUJJYUNzZ01nWWswTVI2dzQ0c1F0WkFCS01tcTNBeVpXN1FTT1ZVbmJ4STZ5aWt4TWNmUjJUelFrK2orZmFXdGR5R0kyS0FBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiMTgweDE4MCIsICJ0eXBlIjogImltYWdlL3BuZyJ9XX0=">
+
+<style>
+:root{
+  --bg:#09090B; --bg2:#100F13; --panel:#161419; --panel2:#1F1C22;
+  --line:#2A2620; --line2:#3B3427;
+  --txt:#F2EBDC; --muted:#9B917C; --faint:#635B49;
+  --gold:#E8BC5E; --gold-d:#B5872E; --gold-hi:#F0CF7A;
+  --bronze:#9C7A34; --brick:#BE6A5A; --khaki:#C9B27A;
+  --r:14px; --r-sm:9px;
+  --mono:"SF Mono",ui-monospace,"Roboto Mono",Menlo,Consolas,monospace;
+  --sans:-apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;touch-action:manipulation;overscroll-behavior:none;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--bg);color:var(--txt);font-family:var(--sans);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:40px}
+h1,h2,h3,h4{margin:0;font-weight:700;letter-spacing:.02em}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select,textarea{font-family:inherit;font-size:15px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* header + top tabs */
+.top{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{padding:calc(12px + env(safe-area-inset-top)) 18px 8px;display:flex;align-items:baseline;gap:9px}
+.brand h1{font-size:18px}.brand h1 .g{color:var(--gold)}
+.brand .sub{font-size:10px;color:var(--faint);letter-spacing:.24em;font-family:var(--mono)}
+.tabs{display:flex;overflow-x:auto;scrollbar-width:none;padding:0 10px 0}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;padding:11px 13px;font-size:14px;font-weight:600;color:var(--faint);border-bottom:2px solid transparent;white-space:nowrap}
+.tabs button.on{color:var(--gold);border-bottom-color:var(--gold)}
+
+.view{display:none;padding:16px;animation:fade .22s ease}
+.view.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:15px;margin-bottom:14px}
+.eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase;margin-bottom:11px}
+.row{display:flex;align-items:center;gap:10px}.wrap{flex-wrap:wrap}
+.between{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.grow{flex:1;min-width:0}.muted{color:var(--muted)}.faint{color:var(--faint)}
+.small{font-size:12.5px}.tiny{font-size:11px}.mt{margin-top:12px}.center{text-align:center}
+
+.btn{padding:10px 15px;border-radius:var(--r-sm);background:var(--panel2);border:1px solid var(--line2);font-weight:600;font-size:14px;color:var(--txt);display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.btn:active{transform:scale(.97)}
+.btn.gold{background:linear-gradient(180deg,var(--gold),var(--gold-d));border-color:var(--gold-d);color:#231703}
+.btn.full{width:100%}.btn.sm{padding:7px 11px;font-size:13px}.btn.ghost{background:transparent}
+.chip{padding:8px 13px;border-radius:99px;border:1px solid var(--line2);background:var(--panel2);font-size:13px;font-weight:600;color:var(--muted)}
+.chip.on{color:#231703;background:var(--gold);border-color:var(--gold)}
+.iconbtn{min-width:30px;height:30px;padding:0 8px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--faint);font-size:13px;flex:none;border:1px solid var(--line2)}
+.iconbtn:active{background:var(--panel2)}
+
+.field{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r-sm);padding:10px 12px;color:var(--txt);width:100%}
+.field:focus{outline:none;border-color:var(--gold)}.field::placeholder{color:var(--faint)}
+select.field{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%239B917C' stroke-width='1.4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:30px}
+label.lab{font-size:11.5px;color:var(--muted);display:block;margin:0 0 5px 2px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px}.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px}
+
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:12px 13px}
+.stat .k{font-size:11px;color:var(--faint);margin-bottom:5px}
+.stat .v{font-size:20px;font-weight:700;font-family:var(--mono)}
+.stat .v small{font-size:12px;color:var(--muted);font-weight:500}
+
+/* horizontal week */
+.week{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 6px;margin:0 -2px}
+.week::-webkit-scrollbar{display:none}
+.daycard{flex:0 0 78%;max-width:320px;scroll-snap-align:center;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.daycard.today{border-color:var(--gold)}
+.daycard .dh{display:flex;justify-content:space-between;align-items:center;padding:10px 13px;background:var(--panel2)}
+.daycard .dh .dn{font-weight:700}.daycard .dh .dd{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.daycard .dh .td{font-size:10px;font-family:var(--mono);color:#231703;background:var(--gold);padding:2px 7px;border-radius:99px}
+.seclabel{font-size:10px;font-family:var(--mono);letter-spacing:.12em;color:var(--faint);padding:9px 13px 3px}
+.li{display:flex;align-items:center;gap:9px;padding:7px 13px}
+.li .dot{width:7px;height:7px;border-radius:99px;flex:none}
+.li .nm{font-size:13.5px;font-weight:600}.li.done .nm{color:var(--faint);text-decoration:line-through}
+.li .rt{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--gold)}
+.li .ck{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--bronze)}
+.emptyday{padding:10px 13px;color:var(--faint);font-size:12px}
+
+.item{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.item:first-child{border-top:none}
+.item .dot{width:8px;height:8px;border-radius:99px;flex:none}.item .nm{font-weight:600}
+.item.done .nm{color:var(--faint);text-decoration:line-through}
+.pri{font-size:10px;font-family:var(--mono);padding:2px 6px;border-radius:5px;border:1px solid var(--line2);color:var(--muted)}
+.pri.hi{color:var(--gold);border-color:var(--gold-d)}
+.vtag{font-size:10px;font-family:var(--mono);padding:2px 6px;border-radius:5px;border:1px solid var(--line2);color:var(--khaki)}
+.cat{font-size:10px;color:var(--faint);font-family:var(--mono);letter-spacing:.05em}
+.togg{width:44px;height:26px;border-radius:99px;background:var(--panel2);border:1px solid var(--line2);position:relative;flex:none;transition:.15s}
+.togg::after{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:99px;background:var(--faint);transition:.15s}
+.togg.on{background:rgba(232,188,94,.22);border-color:var(--gold)}.togg.on::after{left:20px;background:var(--gold)}
+
+.backup{background:var(--bg2);border:1px dashed var(--line2);border-radius:var(--r-sm);padding:10px 12px;font-size:12.5px;color:var(--muted);margin-top:10px}
+.backup b{color:var(--khaki)}
+
+.prog{height:8px;border-radius:99px;background:var(--bg2);overflow:hidden;border:1px solid var(--line)}
+.prog>i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--gold-d),var(--gold));transition:width .3s}
+.lvl{display:flex;align-items:center;gap:14px}
+.lvl .ring{width:60px;height:60px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;background:conic-gradient(var(--gold) var(--p,0%),var(--panel2) 0);position:relative}
+.lvl .ring::before{content:"";position:absolute;inset:5px;border-radius:50%;background:var(--panel)}
+.lvl .ring b{position:relative;font-family:var(--mono);font-size:20px;color:var(--gold)}
+.kv{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid var(--line);font-size:13px}
+.kv:first-child{border-top:none}
+.buy{border:1px solid var(--line);border-radius:var(--r);padding:12px;margin-bottom:10px}
+.gbox{display:flex;align-items:center;gap:6px;font-size:12px;font-family:var(--mono);padding:7px 11px;border-radius:8px;border:1px solid var(--line2);color:var(--muted);flex:none}
+.gbox .bx{width:15px;height:15px;border-radius:4px;border:1.5px solid var(--faint)}
+.gbox.done{color:#231703;background:var(--gold);border-color:var(--gold)}
+.gbox.done .bx{background:#231703;border-color:#231703}
+.buy.unlocked{border-color:var(--gold)}
+.buy .status{font-size:11px;font-family:var(--mono);padding:3px 8px;border-radius:99px;background:var(--panel2);color:var(--muted)}
+.buy.unlocked .status{background:rgba(232,188,94,.16);color:var(--gold)}
+
+/* pie */
+.pie-wrap{display:flex;align-items:center;gap:16px}
+.donut{width:112px;height:112px;border-radius:50%;flex:none;position:relative}
+.donut::after{content:"";position:absolute;inset:26px;border-radius:50%;background:var(--panel)}
+.legend{flex:1;min-width:0}
+.leg{display:flex;align-items:center;gap:8px;font-size:12.5px;padding:3px 0}
+.leg .sw{width:10px;height:10px;border-radius:3px;flex:none}.leg b{margin-left:auto;font-family:var(--mono);color:var(--muted)}
+.pie-empty{color:var(--faint);font-size:13px;text-align:center;padding:26px 0}
+/* 完成率條 */
+.rperiod{display:flex;gap:6px;margin-bottom:12px}
+.rperiod .chip{cursor:pointer}
+.rtabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:6px;margin-bottom:10px}
+.rtabs::-webkit-scrollbar{display:none}
+.rtabs button{flex:none;background:var(--bg2);border:1px solid var(--line);color:var(--muted);border-radius:8px;padding:5px 11px;font-size:12px;font-family:var(--mono);cursor:pointer}
+.rtabs button.on{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
+.rbars{display:flex;flex-direction:column;gap:9px}
+.rbar{border:1px solid var(--line);border-radius:10px;background:var(--bg2);overflow:hidden}
+.rbar.clk{cursor:pointer}
+.rbar-head{display:flex;align-items:center;gap:9px;padding:9px 12px}
+.rbar-nm{font-size:13px;color:var(--txt);flex:none;width:40px}
+.rbar-track{flex:1;height:8px;border-radius:5px;background:#211d17;overflow:hidden}
+.rbar-fill{display:block;height:100%;border-radius:5px;transition:width .35s ease;min-width:3px}
+.rbar-pct{font-family:var(--mono);font-size:12px;color:var(--muted);flex:none;width:60px;text-align:right}
+.rbar-pct b{color:var(--txt)}
+.rbar.full .rbar-pct b{color:var(--gold)}
+.rbar-caret{flex:none;width:12px;text-align:center;color:var(--faint);font-size:10px;transition:transform .25s}
+.rbar.open .rbar-caret{transform:rotate(90deg)}
+.rbar-body{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.rbar.open .rbar-body{max-height:500px}
+.rbar-body-in{padding:2px 12px 11px 61px;display:flex;flex-direction:column;gap:5px}
+.rbar-miss{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted)}
+.rbar-miss::before{content:"✗";color:var(--brick);font-size:11px;flex:none}
+.rempty{color:var(--faint);font-size:12.5px;text-align:center;padding:18px 0}
+.rsum{font-size:11.5px;color:var(--faint);margin-top:10px;line-height:1.5}
+.note{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r-sm);padding:11px 13px;font-size:12.5px;line-height:1.6;color:var(--muted);margin-top:12px}
+.note b{color:var(--txt)}
+.months{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:6px;margin-bottom:8px}
+.months::-webkit-scrollbar{display:none}
+.months button{flex:none;padding:6px 10px;border-radius:8px;font-size:12px;font-family:var(--mono);color:var(--faint);border:1px solid var(--line2)}
+.months button.on{color:#231703;background:var(--gold);border-color:var(--gold)}
+.months button.empty{opacity:.4}
+
+/* calendar */
+.cal-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cal-grid .wd{text-align:center;font-size:10px;color:var(--faint);font-family:var(--mono);padding:4px 0}
+.cal-cell{aspect-ratio:1;border-radius:8px;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--mono);font-size:13px;color:var(--muted);position:relative}
+.cal-cell.blank{border:none}
+.cal-cell.has{color:var(--txt);border-color:var(--line2)}
+.cal-cell.sel{background:var(--gold);color:#231703;border-color:var(--gold)}
+.cal-cell .d{position:absolute;bottom:5px;width:5px;height:5px;border-radius:99px;background:var(--gold)}
+.cal-cell .d.two{transform:translateX(-4px)}.cal-cell .d.task{background:var(--khaki);transform:translateX(4px)}
+.cal-cell.sel .d{background:#231703}.cal-cell.sel .d.task{background:#231703}
+
+.mask{position:fixed;inset:0;z-index:50;background:rgba(4,4,6,.7);backdrop-filter:blur(3px);display:none;align-items:flex-end}
+.mask.on{display:flex}
+.sheet{width:100%;background:var(--bg2);border-top-left-radius:20px;border-top-right-radius:20px;border-top:1px solid var(--line2);padding:8px 18px calc(22px + env(safe-area-inset-bottom));max-height:88vh;overflow:auto;animation:up .26s cubic-bezier(.2,.8,.2,1)}
+@keyframes up{from{transform:translateY(100%)}to{transform:none}}
+.grab{width:38px;height:4px;border-radius:99px;background:var(--line2);margin:8px auto 14px}
+.sheet h3{margin-bottom:14px;font-size:17px}.f-group{margin-bottom:13px}
+.hint{font-size:11.5px;color:var(--faint);line-height:1.55;margin-top:8px}
+.toast{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%) translateY(20px);background:var(--panel2);border:1px solid var(--gold-d);color:var(--txt);padding:11px 20px;border-radius:99px;font-size:13px;font-weight:600;opacity:0;pointer-events:none;transition:.25s;z-index:60;white-space:nowrap;max-width:90vw}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="brand"><h1>全系統<span class="g">管理</span></h1><span class="sub">SYSTEM</span></div>
+  <div class="tabs" id="tabs">
+    <button data-go="home" class="on">總覽</button>
+    <button data-go="skill">技能系統</button>
+    <button data-go="money">儲蓄系統</button>
+    <button data-go="fit">體能系統</button>
+    <button data-go="diary">日誌</button>
+  </div>
+</div>
+
+<!-- 總覽 -->
+<section class="view on" id="v-home">
+  <div id="backup-warn"></div>
+  <div class="stats">
+    <div class="stat"><div class="k">可用餘額</div><div class="v" id="s-bal">—</div></div>
+    <div class="stat"><div class="k">做單等級</div><div class="v" id="s-lvl">—</div></div>
+    <div class="stat"><div class="k">本週技能完成</div><div class="v" id="s-skdone">—</div></div>
+    <div class="stat"><div class="k">本週體能完成</div><div class="v" id="s-ftdone">—</div></div>
+  </div>
+  <div class="eyebrow">本週課表 · 左右滑動</div>
+  <div class="week" id="week"></div>
+
+  <div class="card mt">
+    <div class="eyebrow">本月排程分佈</div>
+    <div class="hint" style="margin:-4px 0 8px">餅圖＝系統按權重優先級排出的比例，用來驗證排程與遞補是否確實。完成率進度條在各系統頁內。</div>
+    <div class="small muted" style="margin:8px 0 8px">技能</div><div id="home-pie-sk"></div>
+    <div class="small muted" style="margin:14px 0 8px">體能</div><div id="home-pie-ft"></div>
+    <div class="small muted" style="margin:14px 0 8px">收支</div><div id="home-pie-mn"></div>
+  </div>
+
+  <div class="card">
+    <div class="between"><div class="eyebrow" style="margin:0">年度目標</div>
+      <div class="row" style="gap:8px"><div id="goal-year"></div><button class="btn gold sm" id="btn-add-goal">新增</button></div></div>
+    <div id="goal-list" class="mt"></div>
+    <div class="hint">點完成框即標記達成。目標無法刪除；未達成的跨年會帶到明年繼續掛，舊年那條保留並標「未達標」。</div>
+  </div>
+
+  <div class="card">
+    <div class="eyebrow">資料備份</div>
+    <div class="small muted">資料存在這個瀏覽器裡。換手機、換網址或清除前，先匯出一份 JSON 帶走；到新環境開同一網址後匯入即可繼承。</div>
+    <div class="grid2 mt">
+      <button class="btn" id="btn-export">匯出備份</button>
+      <button class="btn" id="btn-import">匯入還原</button>
+    </div>
+    <input type="file" id="import-file" accept="application/json,.json" style="display:none">
+  </div>
+</section>
+
+<!-- 技能系統 -->
+<section class="view" id="v-skill">
+  <div class="card">
+    <div class="between"><div class="eyebrow" style="margin:0">收藏櫃 · 開啟即自動排入本週</div><button class="btn gold sm" id="btn-add-skill">新增</button></div>
+    <div class="hint" style="margin-top:4px">權重 P1–P3 決定排課比重；場地：隨處／限假日／限平日。改動即時重排，已排定的不會被打亂。</div>
+    <div id="skill-list" class="mt"></div>
+    <div id="skill-backup"></div>
+    <button class="btn gold full mt" id="btn-rebuild-skill">儲存並排課</button>
+    <div class="hint center">改完開關、權重、場地或排除日後，按這裡才會依目前設定重排本週技能課表。</div>
+  </div>
+  <div class="card">
+    <div class="eyebrow">排除日 · 出差請假整天不排</div>
+    <div class="grid3">
+      <div><input class="field mono" id="blk-from" type="date"></div>
+      <div><input class="field mono" id="blk-to" type="date"></div>
+      <div><button class="btn full sm" id="btn-add-blk">加入</button></div>
+    </div>
+    <div id="blk-list" class="mt"></div>
+  </div>
+  <div class="card">
+    <div class="between"><div class="eyebrow" style="margin:0">完成率 · 技能</div><div id="sk-rate-ctrl"></div></div>
+    <div id="sk-rate-tabs"></div>
+    <div id="sk-rate-bars"></div>
+    <div id="sk-rate-sum"></div>
+    <div class="hint">分母＝排進去的次數，分子＝完成（計時器跑完計入）。100% 滿條不可展開；未滿可點開只列未完成項，重複排的合併標 ×N。</div>
+  </div>
+</section>
+
+<!-- 儲蓄系統 -->
+<section class="view" id="v-money">
+  <div class="stat" style="margin-bottom:14px"><div class="k">可用餘額（收入 − 支出）</div><div class="v mono" id="m-bal">—</div></div>
+  <div class="card">
+    <div class="between"><div class="eyebrow" style="margin:0">記帳</div><button class="btn gold sm" id="btn-add-ledger">記一筆</button></div>
+    <div id="ledger-nav" class="mt"></div>
+    <div id="ledger-monthsum"></div>
+    <div id="m-cost"></div>
+    <div id="ledger-list" class="mt"></div>
+    <div id="ledger-pager" class="row" style="gap:10px;justify-content:center;margin-top:8px"></div>
+  </div>
+  <div class="card">
+    <div class="eyebrow">做單系統 · 依本金按比例縮放</div>
+    <div id="tr-breach"></div>
+    <div class="lvl">
+      <div class="ring" id="tr-ring"><b id="tr-lvl">1</b></div>
+      <div class="grow">
+        <div class="between"><span class="small muted">本級出金進度</span><span class="mono small" id="tr-prog-t">—</span></div>
+        <div class="prog" style="margin-top:6px"><i id="tr-prog"></i></div>
+        <div class="tiny faint" style="margin-top:8px">總經驗（出金累積） <b class="mono" id="tr-total">—</b></div>
+      </div>
+    </div>
+    <div id="tr-derived" class="mt"></div>
+    <div id="tr-nag" class="hint"></div>
+    <div class="grid2 mt">
+      <button class="btn sm" id="tr-b-trade">記錄打量</button>
+      <button class="btn sm gold" id="tr-b-wd">出金</button>
+      <button class="btn sm" id="tr-b-dep">入金</button>
+      <button class="btn sm" id="tr-b-pnl">輸入盈虧</button>
+    </div>
+    <div class="buy" style="margin-top:12px">
+      <div class="between"><div class="eyebrow" style="margin:0">浮動損益 · 自己看</div></div>
+      <div id="tr-pnl-today" class="mt"></div>
+      <div class="seclabel" style="padding:10px 0 3px">近 7 日</div>
+      <div id="tr-pnl-hist"></div>
+      <div class="hint">手動輸入每筆盈虧，直接加減帳上總額。純紀錄、不進等級；跌破本金線才會扣經驗。</div>
+    </div>
+    <button class="btn ghost sm full mt" id="tr-settings" style="color:var(--faint)">本金與比例設定</button>
+    <button class="btn ghost sm full" id="tr-b-drawp" style="color:var(--faint);opacity:.6">出本金（少用）</button>
+    <div class="hint">錨定「單筆風險 2% 本金、風報 1:2」這類通用風控慣例；出金比例 30% 是預設家規、非世界標準。我不是理財顧問，此為慣例整理非操作建議。</div>
+  </div>
+  <div class="card">
+    <div class="between"><div class="eyebrow" style="margin:0">解鎖購物車</div><button class="btn gold sm" id="btn-add-buy">想要的東西</button></div>
+    <div class="row mt" style="gap:9px">
+      <div class="grow"><label class="lab">儲備倍率（售價 ×）</label><input class="field mono" id="buy-mult" type="number" step="0.1" value="1.5"></div>
+      <button class="btn sm" id="btn-save-mult" style="align-self:end">套用</button>
+    </div>
+    <div id="buy-list" class="mt"></div>
+  </div>
+  <div class="card">
+    <div class="between"><div class="eyebrow" style="margin:0">歷史 · 收支</div><div id="mn-year"></div></div>
+    <div class="months" id="mn-months"></div>
+    <div id="mn-hist-pie"></div><div id="mn-hist-note"></div>
+    <div class="seclabel" style="padding:14px 0 2px">賽季履歷 · 每季複盤</div>
+    <div id="mn-seasons"></div>
+  </div>
+</section>
+
+<!-- 體能系統 -->
+<section class="view" id="v-fit">
+  <div class="card">
+    <div class="between"><div class="eyebrow" style="margin:0">部位 · 開啟即自動排入本週</div><button class="btn gold sm" id="btn-add-part">新增</button></div>
+    <div class="hint" style="margin-top:4px">權重 P1–P3 決定訓練比重；同一部位一週最多 3 次，系統自動隔開恢復日。</div>
+    <div id="part-list" class="mt"></div>
+    <div id="fit-backup"></div>
+    <button class="btn gold full mt" id="btn-rebuild-fit">儲存並排課</button>
+    <div class="hint center">改完部位、權重後，按這裡才會依目前設定重排本週體能課表。</div>
+  </div>
+  <div class="card">
+    <div class="between"><div class="eyebrow" style="margin:0">完成率 · 體能</div><div id="ft-rate-ctrl"></div></div>
+    <div id="ft-rate-tabs"></div>
+    <div id="ft-rate-bars"></div>
+    <div id="ft-rate-sum"></div>
+    <div class="hint">分母＝排進去的次數，分子＝完成（計時器跑完計入）。100% 滿條不可展開；未滿可點開只列未完成項。</div>
+  </div>
+</section>
+
+<!-- 日誌 -->
+<section class="view" id="v-diary">
+  <div class="card">
+    <div class="cal-h">
+      <button class="iconbtn" id="cal-prev">上月</button>
+      <div class="mono" id="cal-title" style="font-weight:700"></div>
+      <button class="iconbtn" id="cal-next">下月</button>
+    </div>
+    <div class="row" style="margin-bottom:10px;gap:8px">
+      <input class="field mono" id="cal-jump" type="date" style="flex:1">
+      <button class="btn sm" id="cal-jump-btn">查閱</button>
+    </div>
+    <div class="cal-grid" id="cal-grid"></div>
+  </div>
+  <div class="card">
+    <div class="between"><div class="eyebrow" style="margin:0" id="diary-date">選擇日期</div><span class="tiny faint mono" id="diary-count">0/1000</span></div>
+    <textarea class="field mono" id="diary-text" rows="9" maxlength="1000" placeholder="寫下今天…" style="resize:vertical;line-height:1.7"></textarea>
+    <button class="btn gold full mt" id="diary-save">儲存日誌</button>
+  </div>
+  <div class="card">
+    <div class="between"><div class="eyebrow" style="margin:0" id="task-date">當日任務</div><button class="btn gold sm" id="btn-add-task">新增任務</button></div>
+    <div class="hint" style="margin-top:2px">只有手動加的日子才有任務，不強制每天設。</div>
+    <div id="task-list" class="mt"></div>
+  </div>
+</section>
+
+<div class="mask" id="mask"><div class="sheet" id="sheet"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* ================= 儲存層 ================= */
+const KEY="cultivation_hub_v3";let mem=null;
+const store={read(){try{const r=localStorage.getItem(KEY);return r?JSON.parse(r):null;}catch(e){return mem;}},
+  write(d){try{localStorage.setItem(KEY,JSON.stringify(d));}catch(e){mem=d;}}};
+
+const CAT_COLOR={肢體:"#F0CF7A",創作:"#E8BC5E",技術:"#C99A3C",思想:"#B5872E",語言:"#EADFB8",學力:"#8F6A28"};
+const PART_COLOR={胸:"#F0CF7A",背:"#E8BC5E",腿:"#C99A3C",肩:"#B5872E",二頭:"#EADFB8",三頭:"#A67C3D",核心:"#8F6A28"};
+const CATS=["肢體","創作","技術","思想","語言","學力"];
+const uid=()=>Math.random().toString(36).slice(2,9);
+
+function seed(){
+  const sk=(name,category,priority,venue="anywhere")=>({id:uid(),name,category,priority,venue,active:false,starve:0});
+  const pt=(name,priority)=>({name,priority,active:false,starve:0});
+  return {
+    skills:[
+      sk("Breaking","肢體",2,"weekend"),sk("鋼琴","肢體",2,"weekend"),sk("Beatbox","肢體",1),
+      sk("魔方","肢體",2),sk("繪畫","創作",2),sk("影片剪輯","創作",2),
+      sk("小說創作","創作",3),sk("3D建模 Blender","技術",2),sk("Minecraft 紅石","技術",1),
+      sk("FPV 飛行/組裝","技術",2,"weekend"),sk("3D列印","技術",1),sk("論文/學術支線","思想",3),
+      sk("系統設計 指令惡魔","技術",3),sk("吉他","肢體",2),sk("橫笛","肢體",1),
+      sk("Arduino 軟硬體","技術",2),sk("英日雙語","語言",3),
+      sk("物理","學力",2),sk("化學","學力",2),sk("中醫學","學力",2),
+      sk("數學","學力",3),sk("資工","學力",3),sk("機工","學力",2),
+    ],
+    parts:[pt("胸",2),pt("背",2),pt("腿",3),pt("肩",2),pt("二頭",1),pt("三頭",1),pt("核心",2)],
+    cfg:{skWeekday:3,skWeekend:4,ftPerDay:2},
+    blocks:[],
+    ledger:[],
+    trading:{principal:0,level:1,levelXP:0,lifetimeWd:0,pnlSum:0,withdrawn:0,pnlDaily:{},pendingProfit:0,breachMax:0,breachActive:false,riskPct:0.02,rr:2,threshPct:0.15,withdrawRatio:0.30,marginPct:0.25},
+    cart:[],mult:1.5,
+    week:null, history:{}, diary:{}, goals:{}, tasks:{},
+    partColors:{}, lastBackup:null,
+  };
+}
+let S=store.read();if(!S)S=seed();
+S=Object.assign(seed(),S);
+S.skills=S.skills.map(s=>Object.assign({venue:"anywhere",starve:0},s));
+S.parts=S.parts.map(p=>Object.assign({starve:0},p));
+S.partColors=S.partColors||{};Object.assign(PART_COLOR,S.partColors); // 還原自訂部位顏色
+// 做單系統：舊資料轉新模型（累積出金→經驗；補齊新欄位）
+(function(){const t=S.trading;
+  ["level"].forEach(k=>{if(t[k]==null)t[k]=1;});
+  ["levelXP","lifetimeWd","pnlSum","withdrawn","pendingProfit","breachMax"].forEach(k=>{if(t[k]==null)t[k]=t[k==="lifetimeWd"?"totalXP":k]||0;});
+  if(t.lifetimeWd===0&&t.totalXP)t.lifetimeWd=t.totalXP;
+  if(t.breachActive==null)t.breachActive=false;if(!t.pnlDaily)t.pnlDaily={};
+  delete t.totalXP;delete t.floatPnl;delete t.threshMult;delete t.pendingReserve;delete t.levelWithdrawn;delete t.totalWithdrawn;})();
+// 完成率系統：history 從「月完成計數」改為「按週凍結（含分母與細項）」。
+// 舊格式（history[年][月].skill=數）無排程分母，算不出率 → 一次性清除，乾淨重來。保留已升級的 weeks。
+(function(){
+  if(S._rateHist)return;
+  for(const y in S.history){const yr=S.history[y];
+    for(const k in yr){if(k!=="weeks")delete yr[k];} // 移除舊的月鍵，只留 weeks
+    if(!yr.weeks||!Object.keys(yr.weeks).length){if(!yr.weeks)delete S.history[y];}
+  }
+  S._rateHist=true;
+})();
+const save=()=>store.write(S);
+
+/* ================= 工具 ================= */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money=n=>"$"+Math.round(n).toLocaleString("en-US");
+const pad=n=>String(n).padStart(2,"0");
+const iso=d=>d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
+const DOW=["日","一","二","三","四","五","六"];
+let toastT;function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove("on"),1800);}
+function sundayOf(dt){const d=new Date(dt);d.setHours(0,0,0,0);d.setDate(d.getDate()-d.getDay());return d;}
+function weekDates(sunISO){const base=sunISO?new Date(sunISO+"T00:00:00"):sundayOf(new Date());const a=[];for(let i=0;i<7;i++){const d=new Date(base);d.setDate(base.getDate()+i);a.push(d);}return a;}
+const STARVE_BOOST=2; // 連續 >2 週沒排到 → 臨時升一階
+function weekRand(key){let h=2166136261;for(let i=0;i<key.length;i++){h^=key.charCodeAt(i);h=Math.imul(h,16777619);}return ((h>>>0)%100000)/100000;} // 週內固定、跨週才變
+let todayISO=iso(new Date());
+const isWeekendIdx=i=>i===0||i===6;
+const isBlocked=k=>S.blocks.some(b=>k>=b.from&&k<=b.to);
+
+/* ================= 週引擎：自生成 + 週日重排 + 後備 ================= */
+function ensureWeek(){
+  todayISO=iso(new Date()); // 跨午夜也重算，避免長開的 PWA 卡在昨天
+  const sun=iso(sundayOf(new Date()));
+  if(!S.week||S.week.sunday!==sun){ rollover(sun); buildAll(); } // 週日自動排課
+  resumeTimers();
+}
+function buildAll(){const ds=weekDates(S.week.sunday);ds.forEach(d=>{const k=iso(d);if(!S.week.skill[k])S.week.skill[k]=[];if(!S.week.fit[k])S.week.fit[k]=[];});reconcileSkills(ds);reconcileFit(ds);save();}
+function rebuildSkills(){const ds=weekDates(S.week.sunday);S.week.backupSkill=[];reconcileSkills(ds);save();}
+function rebuildFit(){const ds=weekDates(S.week.sunday);S.week.backupFit=[];reconcileFit(ds);save();}
+function stripSkillFromWeek(id){if(!S.week)return;for(const k in S.week.skill)S.week.skill[k]=S.week.skill[k].filter(it=>it.skillId!==id);S.week.backupSkill=(S.week.backupSkill||[]).filter(x=>x!==id);}
+function stripPartFromWeek(name){if(!S.week)return;for(const k in S.week.fit)S.week.fit[k]=S.week.fit[k].filter(it=>it.part!==name);S.week.backupFit=(S.week.backupFit||[]).filter(x=>x!==name);}
+function rollover(sun){
+  if(S.week){ // 折算上週：完全沒被排到 → starve+1，有排到 → 歸零
+    const oldS=S.week.skill||{}, oldF=S.week.fit||{};
+    const schedS=new Set();Object.values(oldS).forEach(a=>a.forEach(it=>schedS.add(it.skillId)));
+    const schedF=new Set();Object.values(oldF).forEach(a=>a.forEach(it=>schedF.add(it.part)));
+    S.skills.forEach(s=>{if(!s.active)return; s.starve=schedS.has(s.id)?0:(s.starve||0)+1;});
+    S.parts.forEach(p=>{if(!p.active)return; p.starve=schedF.has(p.name)?0:(p.starve||0)+1;});
+    settleWeek(S.week); // 凍結上週為歷史（含細項），月/總覽都由週推算
+  }
+  S.week={sunday:sun,skill:{},fit:{},backupSkill:[],backupFit:[],completions:{},fitCompletions:{}};
+  const ds=weekDates(sun);ds.forEach(d=>{S.week.skill[iso(d)]=[];S.week.fit[iso(d)]=[];});
+  save();
+}
+// 把某週凍結進 history[年].weeks[週日]。結構：{skill:{分類:{s,d,miss:[名]}},fit:{部位:{s,d,miss:[名]}}}
+// miss 保留排程當下的名字快照，永久可回溯（技能之後改名不影響舊紀錄）。
+function settleWeek(wk){
+  if(!wk||!wk.sunday)return;
+  const y=+wk.sunday.slice(0,4);
+  S.history[y]=S.history[y]||{};S.history[y].weeks=S.history[y].weeks||{};
+  S.history[y].weeks[wk.sunday]=freezeWeek(wk);
+}
+// 從 S.week 現況算出一週的凍結快照（也用於「本週即時」）
+function freezeWeek(wk){
+  const roll=(src,keyf)=>{const g={};
+    Object.values(src||{}).forEach(arr=>arr.forEach(it=>{
+      const k=keyf(it);g[k]=g[k]||{s:0,d:0,miss:{}};g[k].s++;
+      if(it.done)g[k].d++;else g[k].miss[it.name]=(g[k].miss[it.name]||0)+1;
+    }));
+    const out={};for(const k in g){out[k]={s:g[k].s,d:g[k].d,
+      miss:Object.keys(g[k].miss).map(n=>g[k].miss[n]>1?n+" ×"+g[k].miss[n]:n)};}
+    return out;
+  };
+  return {skill:roll(wk.skill,it=>it.cat),fit:roll(wk.fit,it=>it.part)};
+}
+// 取某週資料（本週→即時算；歷史週→讀凍結）。回傳 {skill:{...},fit:{...}} 或 null
+function weekData(sunday){
+  if(S.week&&S.week.sunday===sunday)return freezeWeek(S.week);
+  const y=+sunday.slice(0,4);
+  return (S.history[y]&&S.history[y].weeks&&S.history[y].weeks[sunday])||null;
+}
+// 該月所有週日（凍結的 + 本週若屬該月），排序
+function monthSundays(y,m){
+  const set=new Set();
+  if(S.history[y]&&S.history[y].weeks)for(const sun in S.history[y].weeks){
+    if(+sun.slice(0,4)===y&&+sun.slice(5,7)===m)set.add(sun);
+  }
+  if(S.week){const s=S.week.sunday;if(+s.slice(0,4)===y&&+s.slice(5,7)===m)set.add(s);}
+  return [...set].sort();
+}
+// 加總某月成 {分類:{s,d,miss:[]}}。kind:"skill"|"fit"
+function monthAgg(kind,y,m){
+  const acc={};
+  monthSundays(y,m).forEach(sun=>{const wd=weekData(sun);if(!wd)return;const g=wd[kind]||{};
+    for(const k in g){acc[k]=acc[k]||{s:0,d:0,miss:[]};acc[k].s+=g[k].s;acc[k].d+=g[k].d;
+      if(g[k].miss)acc[k].miss.push(...g[k].miss);}
+  });
+  return acc;
+}
+function reconcileSkills(ds){
+  const activeIds=new Set(S.skills.filter(s=>s.active).map(s=>s.id));
+  ds.forEach(d=>{const k=iso(d);S.week.skill[k]=S.week.skill[k].filter(it=>activeIds.has(it.skillId));});
+  S.week.backupSkill=S.week.backupSkill.filter(id=>activeIds.has(id));
+  const active=S.skills.filter(s=>s.active);
+  if(!active.length)return;
+  const sun=S.week.sunday;
+  const dayCap={};ds.forEach((d,i)=>{const k=iso(d);dayCap[k]=isBlocked(k)?0:(isWeekendIdx(i)?S.cfg.skWeekend:S.cfg.skWeekday);});
+  const totalCap=Object.values(dayCap).reduce((a,b)=>a+b,0);
+  // 有效優先級：連饿>2週臨時升一階（P1最多到P2，封頂）
+  const ep=s=>s.priority+((s.starve||0)>STARVE_BOOST?1:0);
+  const canDay=(s,i,k)=>{if(dayCap[k]===0)return false;
+    if(s.venue==="weekend"&&!isWeekendIdx(i))return false;
+    if(s.venue==="weekday"&&isWeekendIdx(i))return false;return true;};
+  // 該技能可放的天（符合場地、未排除）＝一週次數上限（一科一天最多一次）
+  const eligDays=s=>ds.reduce((n,d,i)=>n+(canDay(s,i,iso(d))?1:0),0);
+  // 排序：有效優先級高→低 → starve高→低(上輪遞補) → 週內固定隨機
+  const sorted=[...active].sort((a,b)=>ep(b)-ep(a)||(b.starve||0)-(a.starve||0)||weekRand(sun+a.id)-weekRand(sun+b.id));
+  const cntOf=id=>ds.reduce((n,d)=>n+S.week.skill[iso(d)].filter(it=>it.skillId===id).length,0);
+  // === 配額計算：先地板、後除數法。權重在「剩餘容量」上真正展開 ===
+  const alloc={};active.forEach(s=>alloc[s.id]=cntOf(s.id)); // 保留已排定（重排時不打亂）
+  let remaining=totalCap-Object.values(alloc).reduce((a,b)=>a+b,0);
+  // Phase 1 公平地板：依順位每科先給 1 次；容量不足時，低優先級落榜→後備
+  for(const s of sorted){if(remaining<=0)break;if(alloc[s.id]>=1)continue;if(eligDays(s)>=1){alloc[s.id]=1;remaining--;}}
+  // Phase 2 剩餘容量用除數法（分數＝ep/(次數+1)）按權重分，受一週天數上限約束 → P3 先拿到第二、三次
+  let guard=0;
+  while(remaining>0&&guard++<9999){
+    let best=null,bestScore=-1;
+    for(const s of sorted){if(alloc[s.id]>=eligDays(s))continue;const sc=ep(s)/(alloc[s.id]+1);if(sc>bestScore+1e-9){bestScore=sc;best=s;}}
+    if(!best)break;alloc[best.id]++;remaining--;
+  }
+  // 依 alloc 實際落位：放進「可排、當日未含該科、未達當日上限」的日子，挑當日最空的先放（每天負載平均）
+  sorted.forEach(s=>{
+    let need=alloc[s.id]-cntOf(s.id);
+    while(need>0){
+      const cand=ds.map((d,i)=>({k:iso(d),i})).filter(o=>canDay(s,o.i,o.k)
+        &&!S.week.skill[o.k].some(it=>it.skillId===s.id)
+        &&S.week.skill[o.k].length<dayCap[o.k]);
+      if(!cand.length)break;
+      cand.sort((a,b)=>S.week.skill[a.k].length-S.week.skill[b.k].length);
+      const o=cand[0];
+      S.week.skill[o.k].push({id:uid(),skillId:s.id,name:s.name,cat:s.category,done:false,timer:null});need--;
+    }
+  });
+  // 後備：想排到 alloc 卻沒排滿的（含被地板擠掉、alloc=0 的），下週靠 starve 遞補
+  S.week.backupSkill=active.filter(s=>cntOf(s.id)<Math.max(1,alloc[s.id])).map(s=>s.id);
+}
+
+function reconcileFit(ds){
+  const activeNames=new Set(S.parts.filter(p=>p.active).map(p=>p.name));
+  ds.forEach(d=>{const k=iso(d);S.week.fit[k]=S.week.fit[k].filter(it=>activeNames.has(it.part));});
+  S.week.backupFit=S.week.backupFit.filter(n=>activeNames.has(n));
+  const active=S.parts.filter(p=>p.active);
+  if(!active.length)return;
+  const sun=S.week.sunday;
+  const dayCap={};ds.forEach((d,i)=>{const k=iso(d);dayCap[k]=isBlocked(k)?0:S.cfg.ftPerDay;});
+  const totalCap=Object.values(dayCap).reduce((a,b)=>a+b,0);
+  const ep=p=>p.priority+((p.starve||0)>STARVE_BOOST?1:0);
+  const sumEp=active.reduce((a,p)=>a+ep(p),0)||1;
+  const sorted=[...active].sort((a,b)=>ep(b)-ep(a)||(b.starve||0)-(a.starve||0)||weekRand(sun+a.name)-weekRand(sun+b.name));
+  const cntOf=name=>ds.reduce((n,d)=>n+S.week.fit[iso(d)].filter(it=>it.part===name).length,0);
+  sorted.forEach(p=>{
+    let desired=Math.max(1,Math.min(Math.round(totalCap*ep(p)/sumEp),3)); // 同部位一週上限 3
+    let need=desired-cntOf(p.name);if(need<=0)return;
+    let placed=0;
+    while(placed<need){
+      const cand=ds.map((d,i)=>({k:iso(d),i})).filter(o=>{
+        if(dayCap[o.k]===0)return false;
+        if(S.week.fit[o.k].some(it=>it.part===p.name))return false;
+        if(S.week.fit[o.k].length>=dayCap[o.k])return false;
+        const prev=ds[o.i-1]?iso(ds[o.i-1]):null,next=ds[o.i+1]?iso(ds[o.i+1]):null;
+        if(prev&&S.week.fit[prev].some(it=>it.part===p.name))return false;
+        if(next&&S.week.fit[next].some(it=>it.part===p.name))return false;
+        return true;
+      });
+      if(!cand.length)break;
+      cand.sort((a,b)=>S.week.fit[a.k].length-S.week.fit[b.k].length);
+      const o=cand[0];
+      S.week.fit[o.k].push({id:uid(),part:p.name,name:p.name+" 訓練",done:false,timer:null});placed++;
+    }
+    if(cntOf(p.name)<1)S.week.backupFit=[...new Set([...S.week.backupFit,p.name])];
+  });
+  S.week.backupFit=S.week.backupFit.filter(n=>!ds.some(d=>S.week.fit[iso(d)].some(it=>it.part===n)));
+}
+
+/* ================= 計時器 ================= */
+let ticker=null;
+function startTimer(item,mins){item.timer={mins,endAt:Date.now()+mins*60000};save();ensureTicker();renderCurrent();}
+function stopTimer(item){item.timer=null;save();renderCurrent();}
+function ensureTicker(){if(ticker)return;ticker=setInterval(tick,1000);}
+function allItems(){const a=[];if(!S.week)return a;for(const k in S.week.skill)S.week.skill[k].forEach(it=>a.push({it,type:"skill",date:k}));for(const k in S.week.fit)S.week.fit[k].forEach(it=>a.push({it,type:"fit",date:k}));return a;}
+function resumeTimers(){let any=false;allItems().forEach(({it,type})=>{if(it.timer&&it.timer.endAt&&!it.done){if(Date.now()>=it.timer.endAt)completeItem(it,type);else any=true;}});if(any)ensureTicker();}
+function tick(){let running=false,changed=false;
+  allItems().forEach(({it,type})=>{if(it.done||!it.timer||!it.timer.endAt)return;
+    const rem=it.timer.endAt-Date.now();
+    if(rem<=0){completeItem(it,type);changed=true;}
+    else{running=true;const el=document.querySelector('[data-tmr="'+it.id+'"]');if(el)el.textContent=fmtRem(rem);}
+  });
+  if(changed)renderCurrent();
+  if(!running&&!changed){clearInterval(ticker);ticker=null;}
+}
+const fmtRem=ms=>{const s=Math.max(0,Math.ceil(ms/1000));return pad(Math.floor(s/60))+":"+pad(s%60);};
+function completeItem(it,type){
+  it.done=true;it.timer=null;
+  let label;
+  if(type==="skill"){S.week.completions[it.skillId]=(S.week.completions[it.skillId]||0)+1;label=it.name+" 完成";}
+  else{S.week.fitCompletions[it.part]=(S.week.fitCompletions[it.part]||0)+1;label=it.part+" 訓練完成";}
+  toast(label);notify(label);beep();save();
+}
+// 真的送出通知（先前只請求權限、從未送出）。App 在前景或背景分頁時可響；被系統完全關閉時
+// 無 Service Worker 仍無法喚醒——這是網頁 PWA 的先天限制，計時請盡量讓分頁留著。
+function notify(body){try{if("Notification"in window&&Notification.permission==="granted"){
+  new Notification("全系統管理",{body,tag:"cult-timer",silent:false});}}catch(e){}}
+function beep(){try{const c=new(window.AudioContext||window.webkitAudioContext)();const o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);o.frequency.value=660;g.gain.setValueAtTime(.18,c.currentTime);o.start();g.gain.exponentialRampToValueAtTime(.001,c.currentTime+.5);o.stop(c.currentTime+.5);}catch(e){}}
+
+/* ================= 衍生 ================= */
+let ledPage=0;
+const balance=()=>S.ledger.reduce((n,e)=>n+(e.type==="income"?e.amount:e.type==="expense"?-e.amount:0),0); // cost 不計入可用餘額
+const investedCost=()=>S.ledger.reduce((n,e)=>n+(e.type==="cost"?(e.note==="出本金"?-e.amount:e.amount):0),0);
+const T=()=>S.trading;
+const trRisk=()=>T().principal*T().riskPct, trTarget=()=>T().principal*T().rr*T().riskPct;
+const trThresh=(L)=>T().principal*T().threshPct*(L==null?T().level:L); // 升級門檻：隨本金按比例，等級固定
+const trLevelInfo=()=>({level:T().level||1,into:T().levelXP||0,need:trThresh()});
+const trMarginCap=()=>T().principal*T().marginPct*(T().level||1);
+const trAccount=()=>T().principal+(T().pnlSum||0)-(T().withdrawn||0); // 帳上總額
+const trProfitAvail=()=>Math.max(0,trAccount()-T().principal);        // 可出獲利（出金上限）
+const trBreachPct=()=>{const P=T().principal;if(P<=0)return 0;return Math.min(1,Math.max(0,(P-trAccount())/P));};
+// 出金：升級（等級+經驗，只有出金會加）
+function trWithdraw(a){const tt=T();tt.withdrawn+=a;tt.lifetimeWd+=a;tt.levelXP+=a;
+  while(tt.levelXP>=trThresh()&&trThresh()>0){tt.levelXP-=trThresh();tt.level++;}}
+// 輸入盈虧後：跌破本金線→按最深跌破%扣總經驗（可掉級，地板Lv1，補回不退、只出金回補）
+function trAfterAccount(){const tt=T(),P=tt.principal;if(P<=0){tt.breachActive=false;tt.breachMax=0;return;}
+  if(trAccount()<P){const bp=trBreachPct();
+    if(bp>(tt.breachMax||0)){const prev=tt.breachMax||0;let tot=P*tt.threshPct*(tt.level-1)*tt.level/2+tt.levelXP;
+      tot*=(1-bp)/((1-prev)||1);tt.level=1;tt.levelXP=0;
+      while(tot>=trThresh()&&trThresh()>0){tot-=trThresh();tt.level++;}tt.levelXP=Math.max(0,tot);tt.breachMax=bp;}
+    tt.breachActive=true;}else{tt.breachActive=false;tt.breachMax=0;}}
+function weekDoneCount(kind){if(!S.week)return 0;const c=kind==="skill"?S.week.completions:S.week.fitCompletions;return Object.values(c||{}).reduce((a,b)=>a+b,0);}
+
+/* ================= Render ================= */
+function renderCurrent(){renderHome();renderSkill();renderFit();renderMoney();}
+function renderAll(){renderHome();renderSkill();renderMoney();renderFit();renderDiary();renderGoals();}
+
+function pie(data){const list=data.filter(d=>d.value>0),tot=list.reduce((a,d)=>a+d.value,0);
+  if(!tot)return `<div class="pie-empty">尚無資料</div>`;
+  let acc=0;const seg=list.map(d=>{const a=acc;acc+=d.value/tot*100;return `${d.color} ${a}% ${acc}%`;}).join(",");
+  const leg=list.map(d=>`<div class="leg"><span class="sw" style="background:${d.color}"></span>${esc(d.label)}<b>${Math.round(d.value/tot*100)}%</b></div>`).join("");
+  return `<div class="pie-wrap"><div class="donut" style="background:conic-gradient(${seg})"></div><div class="legend">${leg}</div></div>`;}
+
+function backupAgeDays(){if(!S.lastBackup)return null;return Math.floor((Date.now()-S.lastBackup)/86400000);}
+function renderHome(){
+  const age=backupAgeDays();const warn=$("#backup-warn");
+  if(warn){if(age===null){warn.className="backup";warn.style.borderColor="var(--brick)";warn.innerHTML='<b style="color:var(--brick)">尚未備份過</b>：資料只存在這個瀏覽器，iOS 若連續 7 天沒開此網站可能整批清掉。到下方「匯出備份」存一份。';}
+    else if(age>=7){warn.className="backup";warn.style.borderColor="var(--brick)";warn.innerHTML=`<b style="color:var(--brick)">上次備份已 ${age} 天</b>：建議再匯出一份，避免瀏覽器清除時全失。`;}
+    else{warn.innerHTML="";warn.className="";warn.style.borderColor="";}}
+  $("#s-bal").textContent=money(balance());
+  $("#s-lvl").textContent="Lv."+trLevelInfo().level;
+  $("#s-skdone").innerHTML=weekDoneCount("skill")+' <small>次</small>';
+  $("#s-ftdone").innerHTML=weekDoneCount("fit")+' <small>次</small>';
+  // 橫滾週
+  const ds=weekDates(S.week.sunday);
+  $("#week").innerHTML=ds.map((d,i)=>{const k=iso(d),today=k===todayISO;
+    const sk=S.week.skill[k]||[],ft=S.week.fit[k]||[],blk=isBlocked(k);
+    const liSk=sk.length?sk.map(it=>liRow(it,"skill",CAT_COLOR[it.cat])).join(""):'<div class="emptyday">—</div>';
+    const liFt=ft.length?ft.map(it=>liRow(it,"fit",PART_COLOR[it.part])).join(""):'<div class="emptyday">—</div>';
+    return `<div class="daycard ${today?"today":""}" ${today?'id="today-card"':''}>
+      <div class="dh"><div class="row" style="gap:8px"><span class="dn">週${DOW[i]}</span><span class="dd">${d.getMonth()+1}/${d.getDate()}</span></div>
+        ${today?'<span class="td">今天</span>':(blk?'<span class="dd">排除</span>':'')}</div>
+      <div class="seclabel">技能</div>${liSk}
+      <div class="seclabel">體能</div>${liFt}</div>`;}).join("");
+  const tc=$("#today-card");if(tc){const w=$("#week");w.scrollLeft=tc.offsetLeft-(w.clientWidth-tc.clientWidth)/2;}
+  // 本月排程分佈（餅圖＝排程占比，看系統按權重排出什麼配置）；由該月各週推算
+  const now=new Date(),y=now.getFullYear(),m=now.getMonth()+1;
+  const aSk=monthAgg("skill",y,m),aFt=monthAgg("fit",y,m);
+  $("#home-pie-sk").innerHTML=pie(Object.keys(aSk).map(c=>({label:c,value:aSk[c].s,color:CAT_COLOR[c]||"#888"})));
+  $("#home-pie-ft").innerHTML=pie(Object.keys(aFt).map(p=>({label:p,value:aFt[p].s,color:PART_COLOR[p]||"#888"})));
+  $("#home-pie-mn").innerHTML=moneyPie(y,m);
+}
+function liRow(it,type,color){
+  const rt=it.done?'<span class="ck">完成</span>':(it.timer&&it.timer.endAt?'<span class="rt" data-tmr="'+it.id+'" data-stop="'+it.id+'">'+fmtRem(it.timer.endAt-Date.now())+'</span>':'<span class="ck" data-start="'+it.id+'">計時</span>');
+  return `<div class="li ${it.done?"done":""}"><span class="dot" style="background:${color}"></span><span class="nm">${esc(it.name)}</span>${rt}</div>`;
+}
+
+function renderSkill(){
+  const cats={};S.skills.forEach(s=>{(cats[s.category]=cats[s.category]||[]).push(s);});
+  const vlab={anywhere:"",weekend:"限假日",weekday:"限平日"};
+  $("#skill-list").innerHTML=Object.keys(cats).map(c=>`<div class="cat" style="margin:14px 0 2px">${c}</div>
+    ${cats[c].map(s=>`<div class="item">
+      <span class="dot" style="background:${CAT_COLOR[c]||'var(--muted)'}"></span>
+      <div class="grow"><div class="nm">${esc(s.name)}</div></div>
+      ${(s.starve||0)>0?'<span class="vtag" style="color:var(--brick);border-color:var(--brick)">遞補×'+(s.starve||0)+'</span>':''}
+      ${vlab[s.venue]?'<span class="vtag">'+vlab[s.venue]+'</span>':''}
+      <span class="pri ${s.priority>=3?"hi":""}">P${s.priority}</span>
+      <button class="iconbtn" data-edit-skill="${s.id}">編輯</button>
+      <div class="togg ${s.active?"on":""}" data-tog-skill="${s.id}"></div></div>`).join("")}`).join("");
+  const bs=(S.week.backupSkill||[]).map(id=>S.skills.find(s=>s.id===id)).filter(Boolean);
+  $("#skill-backup").innerHTML=bs.length?`<div class="backup">優先備選（本週容量不足，下週優先補上）：<b>${bs.map(s=>esc(s.name)).join("、")}</b></div>`:"";
+  renderBlocks();renderHistSkill();
+}
+function renderBlocks(){$("#blk-list").innerHTML=S.blocks.length?S.blocks.map(b=>`<div class="item"><span class="grow small">${b.from} → ${b.to}</span><button class="iconbtn" data-del-blk="${b.id}">刪除</button></div>`).join(""):`<div class="faint tiny" style="padding:4px 2px">目前沒有排除日</div>`;}
+
+function renderFit(){
+  $("#part-list").innerHTML=S.parts.map(p=>`<div class="item">
+    <span class="dot" style="background:${PART_COLOR[p.name]||'var(--muted)'}"></span>
+    <div class="grow"><div class="nm">${esc(p.name)}</div></div>
+    ${(p.starve||0)>0?'<span class="vtag" style="color:var(--brick);border-color:var(--brick)">遞補×'+(p.starve||0)+'</span>':''}
+    <span class="pri ${p.priority>=3?"hi":""}">P${p.priority}</span>
+    <button class="iconbtn" data-edit-part="${p.name}">編輯</button>
+    <div class="togg ${p.active?"on":""}" data-tog-part="${p.name}"></div></div>`).join("");
+  const bf=S.week.backupFit||[];
+  $("#fit-backup").innerHTML=bf.length?`<div class="backup">優先備選：<b>${bf.map(esc).join("、")}</b></div>`:"";
+  renderHistFit();
+}
+
+function renderMoney(){
+  $("#m-bal").textContent=money(balance());
+  const cost=investedCost();$("#m-cost").innerHTML=cost>0?`<div class="between"><span class="muted small">已投入成本（本金）</span><span class="mono small" style="color:var(--gold)">${money(cost)}</span></div>`:"";
+  const per=5, rev=S.ledger.slice().reverse(), pages=Math.max(1,Math.ceil(rev.length/per));
+  if(ledPage>=pages)ledPage=pages-1;if(ledPage<0)ledPage=0;
+  const clr=e=>e.type==="income"?"var(--gold)":e.type==="cost"?"var(--muted)":"var(--brick)";
+  const sign=e=>e.type==="income"?"+":e.type==="cost"?(e.note==="出本金"?"−":"→"):"−";
+  const tag=e=>e.type==="cost"?' <span class="tiny" style="color:var(--muted)">成本</span>':"";
+  $("#ledger-list").innerHTML=rev.length?rev.slice(ledPage*per,ledPage*per+per).map(e=>`<div class="item">
+    <div class="grow"><div class="nm small">${esc(e.note||e.source)}${tag(e)}</div><div class="cat">${esc(e.source)} · ${e.date}</div></div>
+    <span class="mono" style="color:${clr(e)}">${sign(e)}${money(e.amount)}</span>
+    <button class="iconbtn" data-del-led="${e.id}">刪除</button></div>`).join(""):`<div class="faint tiny" style="padding:6px 2px">還沒有紀錄</div>`;
+  $("#ledger-pager").innerHTML=pages>1?`<button class="chip" data-led-pg="-1" ${ledPage<=0?"disabled":""}>‹</button><span class="mono tiny" style="align-self:center">${ledPage+1}/${pages}</span><button class="chip" data-led-pg="1" ${ledPage>=pages-1?"disabled":""}>›</button>`:"";
+  // 月份導覽 + 月結：都跟著「本頁最新那筆」的月份走（一頁跨兩月時以最新那筆為準）
+  const curKey=rev.length?rev[ledPage*per].date.slice(0,7):(new Date().getFullYear()+"-"+pad(new Date().getMonth()+1));
+  const curY=+curKey.slice(0,4),curM=+curKey.slice(5,7);
+  const ledYears=[...new Set([new Date().getFullYear(),...S.ledger.map(e=>+e.date.slice(0,4))])].sort();
+  $("#ledger-nav").innerHTML=rev.length?
+    `<div class="between" style="margin-bottom:8px"><select class="field mono" id="led-year" style="width:auto;padding:6px 26px 6px 10px">${ledYears.map(y=>'<option '+(y===curY?"selected":"")+'>'+y+'</option>').join("")}</select></div>`+
+    `<div class="months">`+[...Array(12)].map((_,i)=>{const m=i+1;const has=S.ledger.some(e=>e.date.slice(0,7)===curY+"-"+pad(m));
+      return `<button data-led-m="${m}" class="${m===curM?"on":""} ${has?"":"empty"}">${m}月</button>`;}).join("")+`</div>`:"";
+  const mInc=S.ledger.filter(e=>e.date.slice(0,7)===curKey&&e.type==="income").reduce((a,e)=>a+e.amount,0);
+  const mExp=S.ledger.filter(e=>e.date.slice(0,7)===curKey&&e.type==="expense").reduce((a,e)=>a+e.amount,0);
+  $("#ledger-monthsum").innerHTML=rev.length?`<div class="note"><b>${curY}/${curM} 月結</b>　收入 ${money(mInc)}　支出 ${money(mExp)}　淨額 ${money(mInc-mExp)}</div>`:"";
+  const tt=T(),info=trLevelInfo(),tgt=info.need;
+  const breach=tt.principal>0&&trAccount()<tt.principal;
+  const bpNum=trBreachPct()*100, bpShow=(bpNum>0&&bpNum<1)?"<1":Math.round(bpNum);
+  $("#tr-breach").innerHTML=breach?`<div class="backup" style="border-color:var(--brick)"><b style="color:var(--brick)">⚠ 虧到本金了</b>　帳上 ${money(trAccount())} 低於本金線 ${money(tt.principal)}（跌破 ${bpShow}%）。經驗已按比例扣，補回本金線上才解除；<b>經驗只靠出金回補</b>，浮回不會自動長回。</div>`:"";
+  $("#tr-lvl").textContent=info.level;
+  const pct=Math.min(100,tgt?info.into/tgt*100:0);
+  $("#tr-ring").style.setProperty("--p",pct+"%");$("#tr-prog").style.width=pct+"%";
+  $("#tr-prog-t").textContent=money(info.into)+" / "+money(tgt);
+  $("#tr-total").textContent=money(tt.lifetimeWd||0);
+  $("#tr-derived").innerHTML=tt.principal>0?`
+    <div class="kv"><span class="muted">本金線</span><span class="mono">${money(tt.principal)}</span></div>
+    <div class="kv"><span class="muted">帳上總額（含浮動）</span><span class="mono" style="color:${breach?"var(--brick)":"var(--txt)"}">${money(trAccount())}</span></div>
+    <div class="kv"><span class="muted">可出獲利</span><span class="mono" style="color:var(--gold)">${money(trProfitAvail())}</span></div>
+    <div class="kv"><span class="muted">單筆風險 ${Math.round(tt.riskPct*100)}%</span><span class="mono">${money(trRisk())}</span></div>
+    <div class="kv"><span class="muted">單筆目標 1:${tt.rr}</span><span class="mono">${money(trTarget())}</span></div>
+    <div class="kv"><span class="muted">保證金上限</span><span class="mono">${money(trMarginCap())}</span></div>
+    <div class="kv"><span class="muted">升級出金門檻（本金×${Math.round(tt.threshPct*100)}%×等級）</span><span class="mono">${money(tgt)}</span></div>`
+    :`<div class="note">先設定本金線（下方「入金」或設定），系統就會依比例算出風險／目標／門檻。</div>`;
+  const sug=Math.round(tt.pendingProfit*tt.withdrawRatio);
+  $("#tr-nag").innerHTML=tt.pendingProfit>0?`累積打量 <b class="mono" style="color:var(--txt)">${money(tt.pendingProfit)}</b> → 建議出金 <b class="mono" style="color:var(--gold)">${money(sug)}</b>（${Math.round(tt.withdrawRatio*100)}%）`:`記錄打量後，這裡會依 ${Math.round(tt.withdrawRatio*100)}% 提醒你該出多少金。`;
+  const todayPnl=(tt.pnlDaily&&tt.pnlDaily[todayISO])||0;
+  $("#tr-pnl-today").innerHTML=`<div class="between"><span class="muted small">今日盈虧</span><span class="mono" style="color:${todayPnl>0?"var(--gold)":todayPnl<0?"var(--brick)":"var(--muted)"}">${todayPnl>0?"+":""}${money(todayPnl)}</span></div>
+    <div class="between" style="margin-top:6px"><span class="muted small">浮動損益累計</span><span class="mono" style="color:${(tt.pnlSum||0)<0?"var(--brick)":"var(--muted)"}">${(tt.pnlSum||0)>0?"+":""}${money(tt.pnlSum||0)}</span></div>`;
+  const days=Object.keys(tt.pnlDaily||{}).sort().reverse().slice(0,7);
+  $("#tr-pnl-hist").innerHTML=days.length?days.map(d=>`<div class="kv"><span class="muted mono small">${d}</span><span class="mono" style="color:${tt.pnlDaily[d]>0?"var(--gold)":tt.pnlDaily[d]<0?"var(--brick)":"var(--muted)"}">${tt.pnlDaily[d]>0?"+":""}${money(tt.pnlDaily[d])}</span></div>`).join(""):`<div class="faint tiny" style="padding:4px 2px">還沒輸入盈虧</div>`;
+  $("#buy-mult").value=S.mult;const bal=balance();
+  $("#buy-list").innerHTML=S.cart.length?S.cart.map(b=>{const need=Math.round(b.price*S.mult),p=Math.min(100,need?bal/need*100:100),ok=bal>=need;
+    return `<div class="buy ${ok?"unlocked":""}"><div class="between"><div class="nm">${esc(b.name)}</div>
+      <div class="row" style="gap:8px"><span class="status">${ok?"已解鎖":"鎖定"}</span><button class="iconbtn" data-del-buy="${b.id}">刪除</button></div></div>
+      <div class="between small" style="margin-top:8px"><span class="muted mono">售價 ${money(b.price)}</span><span class="muted mono">需儲備 ${money(need)}</span></div>
+      <div class="prog" style="margin-top:8px"><i style="width:${p}%"></i></div></div>`;}).join(""):`<div class="faint tiny" style="padding:6px 2px">丟進想買的東西，它會算你要存多少才能解鎖</div>`;
+  renderHistMoney();
+}
+
+/* ===== 歷史圓餅（收支，跨年度） ===== */
+const histState={mn:{y:new Date().getFullYear(),m:new Date().getMonth()+1}};
+function yearsWith(kind){ // 有記帳資料的年份
+  const set=new Set([new Date().getFullYear()]);
+  S.ledger.forEach(e=>set.add(+e.date.slice(0,4)));
+  return [...set].sort();
+}
+function monthHas(kind,y,m){
+  return S.ledger.some(e=>e.date.slice(0,7)===y+"-"+pad(m));
+}
+function yearSelect(kind,id){const ys=yearsWith(kind);const cur=histState[kind].y;
+  return `<select class="field mono" id="${id}" style="width:auto;padding:6px 26px 6px 10px">${ys.map(y=>'<option '+(y===cur?"selected":"")+'>'+y+'</option>').join("")}</select>`;}
+function monthTabs(kind,id){const y=histState[kind].y,cur=histState[kind].m;let h="";
+  for(let m=1;m<=12;m++){const has=monthHas(kind,y,m);h+=`<button data-mtab="${kind}" data-m="${m}" class="${m===cur?"on":""} ${has?"":"empty"}">${m}月</button>`;}
+  return h;}
+function moneyMonthAgg(y,m){const inc={},exp={};S.ledger.forEach(e=>{if(e.date.slice(0,7)!==y+"-"+pad(m))return;if(e.type==="income")inc[e.source]=(inc[e.source]||0)+e.amount;else if(e.type==="expense")exp[e.source]=(exp[e.source]||0)+e.amount;});return{inc,exp};}
+const qMonths=q=>[(q-1)*3+1,(q-1)*3+2,(q-1)*3+3];
+function moneyQuarterAgg(y,q){const inc={},exp={};qMonths(q).forEach(m=>{const a=moneyMonthAgg(y,m);for(const k in a.inc)inc[k]=(inc[k]||0)+a.inc[k];for(const k in a.exp)exp[k]=(exp[k]||0)+a.exp[k];});return{inc,exp};}
+function moneyPieData(inc,exp){return [...Object.keys(inc).map(k=>({label:k,value:inc[k],color:{"正職薪水":"#E8BC5E","合約外快":"#C99A3C","做單":"#B5872E","其他":"#EADFB8"}[k]||"#888"})),
+    ...Object.keys(exp).map(k=>({label:"支出·"+k,value:exp[k],color:"#BE6A5A"}))];}
+function moneyPie(y,m){const {inc,exp}=moneyMonthAgg(y,m);const data=moneyPieData(inc,exp);
+  if(!data.filter(d=>d.value>0).length)return `<div class="pie-empty">本月無記帳</div>`;return pie(data);}
+
+// ── 完成率卡（系統頁底部）：週/月切換 + 進度條（率高在上）+ 點開看細項 ──
+// 狀態：rateState[kind] = {period:"week"|"month", y, m, sunday}
+const rateState={
+  skill:{period:"month",y:new Date().getFullYear(),m:new Date().getMonth()+1,sunday:null},
+  fit:{period:"month",y:new Date().getFullYear(),m:new Date().getMonth()+1,sunday:null}
+};
+const rbarOpen={}; // 展開狀態（記憶體即可）
+function rateColor(r){if(r>=1)return "var(--gold)";if(r>=.6)return "var(--gold-d)";if(r>=.34)return "#C98A3C";return "var(--brick)";}
+// 有資料的年份（依 weeks）
+function rateYears(){const set=new Set([new Date().getFullYear()]);
+  for(const y in S.history){if(S.history[y].weeks&&Object.keys(S.history[y].weeks).length)set.add(+y);}
+  if(S.week)set.add(+S.week.sunday.slice(0,4));
+  return [...set].sort();}
+// 產生率條 rows：{label,color,s,d,miss[]}，率高→低
+function rateRows(kind,agg){
+  const colf=kind==="skill"?(k=>CAT_COLOR[k]||"#888"):(k=>PART_COLOR[k]||"#888");
+  return Object.keys(agg).map(k=>({label:k,color:colf(k),s:agg[k].s,d:agg[k].d,miss:agg[k].miss||[]}))
+    .sort((a,b)=>(b.s?b.d/b.s:0)-(a.s?a.d/a.s:0)); // 率高在上
+}
+function rateBars(kind,rows,anchor){
+  if(!rows.length)return `<div class="rempty">此期間尚無排程紀錄。</div>`;
+  return `<div class="rbars">`+rows.map(r=>{
+    const rate=r.s?r.d/r.s:0,pct=Math.round(rate*100),full=r.d>=r.s&&r.s>0;
+    const ok=!r.miss||r.miss.length===0;
+    const okey=anchor+":"+r.label,open=!ok&&rbarOpen[okey];
+    return `<div class="rbar ${full?"full":""} ${ok?"":"clk"} ${open?"open":""}" ${ok?"":`data-rbar="${okey}"`}>
+      <div class="rbar-head">
+        <span class="rbar-nm">${esc(r.label)}</span>
+        <span class="rbar-track"><span class="rbar-fill" style="width:${pct}%;background:${rateColor(rate)}"></span></span>
+        <span class="rbar-pct"><b>${pct}%</b> ${r.d}/${r.s}</span>
+        <span class="rbar-caret">${ok?"":"▶"}</span>
+      </div>
+      ${ok?"":`<div class="rbar-body"><div class="rbar-body-in">${r.miss.map(n=>`<span class="rbar-miss">${esc(n)}</span>`).join("")}</div></div>`}
+    </div>`;
+  }).join("")+`</div>`;
+}
+function renderRateCard(kind){
+  const st=rateState[kind],pfx=kind==="skill"?"sk":"ft";
+  const yrs=rateYears();
+  const yearSel=`<select class="field mono" id="${pfx}-rate-year" style="width:auto;padding:6px 26px 6px 10px">${yrs.map(y=>`<option ${y===st.y?"selected":""}>${y}</option>`).join("")}</select>`;
+  const periodBtns=`<span class="rperiod"><button class="chip ${st.period==="month"?"on":""}" data-rperiod="${kind}:month">整月</button><button class="chip ${st.period==="week"?"on":""}" data-rperiod="${kind}:week">分週</button></span>`;
+  $(`#${pfx}-rate-ctrl`).innerHTML=`<div class="between">${periodBtns}${yearSel}</div>`;
+  // 月 tab 永遠是骨架（選月）
+  let monthTabRow=`<div class="rtabs">`;
+  for(let mm=1;mm<=12;mm++){const has=monthSundays(st.y,mm).length>0;
+    monthTabRow+=`<button data-rtab="${kind}:m:${mm}" class="${mm===st.m?"on":""}" ${has?"":'style="opacity:.35"'}>${mm}月</button>`;}
+  monthTabRow+=`</div>`;
+  const monLabel=`${st.y}/${st.m}`;
+  let weekTabRow="",agg,label;
+  if(st.period==="week"){
+    // 分週：只列「當前選中月」的週
+    const suns=monthSundays(st.y,st.m);
+    if(!st.sunday||!suns.includes(st.sunday))st.sunday=suns[suns.length-1]||null; // 預設該月最後一週
+    if(suns.length){
+      weekTabRow=`<div class="rtabs" style="margin-top:2px">`;
+      suns.forEach(sun=>{const md=(+sun.slice(5,7))+"/"+(+sun.slice(8,10));const cur=S.week&&S.week.sunday===sun;
+        weekTabRow+=`<button data-rtab="${kind}:w:${sun}" class="${sun===st.sunday?"on":""}">${md}${cur?" 本週":""}</button>`;});
+      weekTabRow+=`</div>`;
+    }
+    const wd=st.sunday?weekData(st.sunday):null;
+    agg={};if(wd){const g=wd[kind]||{};for(const k in g)agg[k]={s:g[k].s,d:g[k].d,miss:g[k].miss||[]};}
+    label=st.sunday?`${monLabel} ${(+st.sunday.slice(8,10))}日那週`:`${monLabel} 無週資料`;
+  }else{
+    agg=monthAgg(kind,st.y,st.m);label=`${monLabel} 整月`;
+  }
+  $(`#${pfx}-rate-tabs`).innerHTML=monthTabRow+weekTabRow;
+  const rows=rateRows(kind,agg);
+  const bars=rows.length?rateBars(kind,rows,pfx+"-"+st.period):
+    `<div class="rempty">${st.y} 年 ${st.m} 月${st.period==="week"?"這週":""}尚無排程紀錄。<br>系統從實際排課後才開始累積，過去沒用時是空的。</div>`;
+  $(`#${pfx}-rate-bars`).innerHTML=bars;
+  $(`#${pfx}-rate-sum`).innerHTML=rateSummary(kind,rows,label);
+}
+function rateSummary(kind,rows,label){
+  const withS=rows.filter(r=>r.s>0);if(!withS.length)return "";
+  const totS=withS.reduce((a,r)=>a+r.s,0),totD=withS.reduce((a,r)=>a+r.d,0);
+  const overall=Math.round(totD/totS*100);
+  const low=withS.reduce((a,r)=>(r.d/r.s<a.d/a.s?r:a),withS[0]);
+  let s=`${label}｜整體完成 <b>${overall}%</b>（${totD}/${totS}）`;
+  if(low.d/low.s<0.6)s+=`，<b>${low.label}</b> 最低（${Math.round(low.d/low.s*100)}%）`;
+  return `<div class="rsum">${s}。</div>`;
+}
+function renderHistSkill(){renderRateCard("skill");}
+function renderHistFit(){renderRateCard("fit");}
+function renderHistMoney(){
+  const st=histState.mn;if(!st.mode)st.mode="month";if(!st.q)st.q=Math.floor(new Date().getMonth()/3)+1;
+  $("#mn-year").innerHTML=yearSelect("mn","mn-year-sel")+
+    `<span class="row" style="gap:6px;margin-left:10px"><button class="chip ${st.mode==="month"?"on":""}" id="mn-mode-m">月</button><button class="chip ${st.mode==="quarter"?"on":""}" id="mn-mode-q">季</button></span>`;
+  if(st.mode==="quarter"){
+    let tabs="";for(let q=1;q<=4;q++){const has=qMonths(q).some(m=>monthHas("mn",st.y,m));tabs+=`<button data-mtab="mn" data-q="${q}" class="${q===st.q?"on":""} ${has?"":"empty"}">Q${q}</button>`;}
+    $("#mn-months").innerHTML=tabs;
+    const {inc,exp}=moneyQuarterAgg(st.y,st.q);const data=moneyPieData(inc,exp);
+    $("#mn-hist-pie").innerHTML=data.filter(d=>d.value>0).length?pie(data):`<div class="pie-empty">本季無記帳</div>`;
+    const i=Object.values(inc).reduce((a,b)=>a+b,0),e=Object.values(exp).reduce((a,b)=>a+b,0),wd=inc["做單"]||0;
+    $("#mn-hist-note").innerHTML=(i||e)?`<div class="note">${st.y} Q${st.q}：收入 ${money(i)}、支出 ${money(e)}，存下比例 <b>${Math.round((i?(i-e)/i:0)*100)}%</b>；做單出金 <b>${money(wd)}</b>。</div>`:`<div class="note">此季尚無記帳。</div>`;
+  }else{
+    $("#mn-months").innerHTML=monthTabs("mn","");
+    const {y,m}=st;$("#mn-hist-pie").innerHTML=moneyPie(y,m);$("#mn-hist-note").innerHTML=noteMoney(y,m);
+  }
+  renderSeasons();
+}
+// 當季輸入盈虧總和（分子）
+function quarterPnl(y,q){const pd=(S.trading&&S.trading.pnlDaily)||{};const mo=qMonths(q).map(m=>y+"-"+pad(m));
+  let s=0;for(const d in pd){if(mo.includes(d.slice(0,7)))s+=pd[d];}return s;}
+// 當季本金基準（分母）：以「現在的真實本金」為錨往回推季初本金（手動設定的本金也抓得到），季內取高水位（入金升、出本金不降）
+function quarterBase(y,q){
+  const qStart=y+"-"+pad((q-1)*3+1)+"-01";
+  const qEnd=(q<4?y+"-"+pad(q*3+1)+"-01":(y+1)+"-01-01");
+  const costs=S.ledger.filter(e=>e.type==="cost").slice().sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:0);
+  const delta=e=>(e.note==="出本金"?-e.amount:e.amount);
+  let atStart=(S.trading&&S.trading.principal)||0; // 季初真實本金 = 現在本金 − 季初(含)以後的所有本金變動
+  costs.forEach(e=>{if(e.date>=qStart)atStart-=delta(e);});
+  let running=atStart,hi=atStart;
+  costs.forEach(e=>{if(e.date>=qStart&&e.date<qEnd){running+=delta(e);if(running>hi)hi=running;}});
+  return hi;}
+function fmtPct(x){const r=Math.round(x*10)/10;return Number.isInteger(r)?String(r):r.toFixed(1);}
+// 季賽季履歷：按年列四季，空白季留白；損益率＝當季輸入盈虧÷當季本金基準，牌位過去留白、當季顯示即時
+function renderSeasons(){const el=$("#mn-seasons");if(!el)return;
+  const ys=yearsWith("mn");const now=new Date();const curY=now.getFullYear(),curQ=Math.floor(now.getMonth()/3)+1;
+  let html="";
+  ys.slice().reverse().forEach(y=>{
+    html+=`<div class="seclabel" style="padding:10px 0 4px">${y}</div><div class="grid2">`;
+    for(let q=1;q<=4;q++){
+      const {inc,exp}=moneyQuarterAgg(y,q);const i=Object.values(inc).reduce((a,b)=>a+b,0),e=Object.values(exp).reduce((a,b)=>a+b,0),wd=inc["做單"]||0;
+      const pnl=quarterPnl(y,q),base=quarterBase(y,q);
+      const isCur=(y===curY&&q===curQ),future=(y>curY||(y===curY&&q>curQ)),empty=(!i&&!e&&!pnl);
+      if(empty){html+=`<div class="buy" style="opacity:.45"><div class="between"><b>Q${q}</b><span class="tiny faint">${future?"未到":"留白"}</span></div></div>`;continue;}
+      const pctStr=base>0?fmtPct(pnl/base*100)+"%":"—";
+      const pnlCol=pnl>0?"var(--gold)":pnl<0?"var(--brick)":"var(--muted)";
+      html+=`<div class="buy ${isCur?"unlocked":""}"><div class="between"><b>Q${q}${isCur?' <span class="tiny" style="color:var(--gold)">本季</span>':''}</b>${isCur?'<span class="mono tiny" style="color:var(--gold)">Lv.'+trLevelInfo().level+'</span>':'<span class="tiny faint">—</span>'}</div>
+        <div class="between small" style="margin-top:6px"><span class="muted">出金</span><span class="mono">${money(wd)}</span></div>
+        <div class="between small"><span class="muted">損益</span><span class="mono" style="color:${pnlCol}">${pnl>=0?"+":"−"}${money(Math.abs(pnl))} · ${pctStr}</span></div></div>`;
+    }
+    html+=`</div>`;
+  });
+  el.innerHTML=html||`<div class="faint tiny">還沒有可回溯的季度資料</div>`;
+}
+
+function noteMoney(y,m){const {inc,exp}=moneyMonthAgg(y,m);const i=Object.values(inc).reduce((a,b)=>a+b,0),e=Object.values(exp).reduce((a,b)=>a+b,0);
+  if(!i&&!e)return `<div class="note">此月尚無記帳。</div>`;const rate=i?(i-e)/i:0;
+  return `<div class="note">本月收入 ${money(i)}、支出 ${money(e)}，存下比例 <b>${Math.round(rate*100)}%</b>。</div>`;}
+
+/* ===== 日誌 + 每日任務 ===== */
+let calState={y:new Date().getFullYear(),m:new Date().getMonth(),sel:todayISO};
+function hasTask(k){return S.tasks[k]&&S.tasks[k].length>0;}
+function renderDiary(){
+  const y=calState.y,m=calState.m;
+  $("#cal-title").textContent=y+" 年 "+(m+1)+" 月";
+  const first=new Date(y,m,1).getDay(),days=new Date(y,m+1,0).getDate();
+  let cells=DOW.map(d=>`<div class="wd">${d}</div>`).join("");
+  for(let i=0;i<first;i++)cells+=`<div class="cal-cell blank"></div>`;
+  for(let d=1;d<=days;d++){const k=y+"-"+pad(m+1)+"-"+pad(d);
+    const dy=S.diary[k]&&S.diary[k].trim(),tk=hasTask(k),sel=k===calState.sel;const two=dy&&tk;
+    let dots="";if(dy)dots+='<span class="d'+(two?" two":"")+'"></span>';if(tk)dots+='<span class="d task"></span>';
+    cells+=`<div class="cal-cell ${dy||tk?"has":""} ${sel?"sel":""}" data-day="${k}"><span class="d0">${d}</span>${dots}</div>`;}
+  $("#cal-grid").innerHTML=cells;
+  $("#diary-date").textContent=calState.sel;
+  const txt=S.diary[calState.sel]||"";$("#diary-text").value=txt;$("#diary-count").textContent=txt.length+"/1000";
+  renderTasks();
+}
+function renderTasks(){
+  $("#task-date").textContent=calState.sel+" 任務";
+  const list=S.tasks[calState.sel]||[];
+  $("#task-list").innerHTML=list.length?list.map(t=>`<div class="item ${t.done?"done":""}">
+    <div class="grow"><div class="nm">${esc(t.text)}</div></div>
+    ${t.done?'<span class="gbox done">已完成</span>':'<button class="gbox" data-done-task="'+t.id+'">完成</button>'}
+    <button class="iconbtn" data-del-task="${t.id}">刪除</button></div>`).join(""):`<div class="faint tiny" style="padding:6px 2px">這天還沒有任務。</div>`;
+}
+
+/* ===== 年度目標 ===== */
+let goalState={y:new Date().getFullYear()};
+function goalYears(){const set=new Set([new Date().getFullYear()]);Object.keys(S.goals).forEach(y=>set.add(+y));return [...set].sort();}
+function ensureGoalYear(){const y=new Date().getFullYear();
+  if(!S.goals[y]){const prev=Object.keys(S.goals).map(Number).filter(x=>x<y).sort().pop();
+    S.goals[y]=prev?(S.goals[prev]||[]).filter(g=>!g.done).map(g=>({id:uid(),text:g.text,done:false,from:g.from||prev})):[];save();}
+}
+function renderGoals(){
+  const ys=goalYears();
+  $("#goal-year").innerHTML=`<select class="field mono" id="goal-year-sel" style="width:auto;padding:6px 24px 6px 10px">${ys.map(y=>'<option '+(y===goalState.y?"selected":"")+'>'+y+'</option>').join("")}</select>`;
+  const list=S.goals[goalState.y]||[];const curY=new Date().getFullYear();
+  $("#goal-list").innerHTML=list.length?list.map(g=>`<div class="item ${g.done?"done":""}">
+    <div class="grow"><div class="nm">${esc(g.text)}</div>
+      ${g.from?'<div class="cat">承自 '+g.from+'</div>':''}
+      ${(!g.done&&goalState.y<curY)?'<div class="cat" style="color:var(--brick)">未達標</div>':''}</div>
+    ${g.done?'<span class="gbox done">已完成</span>':'<button class="gbox" data-done-goal="'+g.id+'">完成</button>'}
+    </div>`).join(""):`<div class="faint tiny" style="padding:6px 2px">還沒有年度目標。</div>`;
+}
+function sheetGoal(){openSheet(`<h3>新增年度目標（${goalState.y}）</h3>
+  <div class="f-group"><label class="lab">目標</label><input class="field" id="g-text" placeholder="例：魔方破 sub-20"></div>
+  <button class="btn gold full" id="g-save">加入</button>`);
+  $("#g-save").onclick=()=>{const t=$("#g-text").value.trim();if(!t)return toast("先寫個目標");
+    (S.goals[goalState.y]=S.goals[goalState.y]||[]).push({id:uid(),text:t,done:false});save();renderGoals();closeSheet();};}
+function sheetTask(){openSheet(`<h3>新增任務（${calState.sel}）</h3>
+  <div class="f-group"><label class="lab">任務</label><input class="field" id="t-text" placeholder="例：回覆合約訊息"></div>
+  <button class="btn gold full" id="t-save">加入</button>`);
+  $("#t-save").onclick=()=>{const t=$("#t-text").value.trim();if(!t)return toast("先寫個任務");
+    (S.tasks[calState.sel]=S.tasks[calState.sel]||[]).push({id:uid(),text:t,done:false});save();renderDiary();closeSheet();};}
+
+/* ================= Modal ================= */
+function openSheet(html){$("#sheet").innerHTML='<div class="grab"></div>'+html;$("#mask").classList.add("on");}
+function closeSheet(){$("#mask").classList.remove("on");}
+$("#mask").addEventListener("click",e=>{if(e.target.id==="mask")closeSheet();});
+
+function sheetStopTimer(item,type){
+  openSheet(`<h3>取消計時</h3><div class="small muted" style="margin-bottom:12px">${esc(item.name)}　剩 ${fmtRem(item.timer.endAt-Date.now())}</div>
+    <button class="btn full" id="ts-stop" style="color:var(--brick);border-color:var(--brick)">取消這個計時</button>
+    <div class="hint">取消不會計入完成，也不影響本月分佈。想重設時間，取消後再按一次「計時」。</div>`);
+  $("#ts-stop").onclick=()=>{stopTimer(item);closeSheet();toast("已取消計時");};
+}
+function sheetTimer(item,type){
+  openSheet(`<h3>設定計時器</h3><div class="small muted" style="margin-bottom:12px">${esc(item.name)}</div>
+    <div class="f-group"><label class="lab">分鐘數</label><input class="field mono" id="tm-min" type="number" inputmode="numeric" placeholder="例：30"></div>
+    <div class="row wrap" style="gap:8px;margin-bottom:12px">${[15,25,30,45,60,90].map(v=>'<button class="chip" data-min="'+v+'">'+v+'</button>').join("")}</div>
+    <button class="btn gold full" id="tm-start">開始計時</button>
+    <div class="hint">時間到會通知並標記完成，並計入本月完成分佈。計時採結束時間戳，切走 App 再回來也不會亂。</div>`);
+  $$('[data-min]').forEach(b=>b.onclick=()=>{$("#tm-min").value=b.dataset.min;});
+  $("#tm-start").onclick=()=>{const mn=+$("#tm-min").value;if(!mn||mn<=0)return toast("輸入分鐘數");startTimer(item,mn);closeSheet();
+    if("Notification"in window&&Notification.permission==="default")Notification.requestPermission();};
+}
+function sheetSkill(edit){const s=edit?S.skills.find(x=>x.id===edit):null;
+  openSheet(`<h3>${s?"編輯技能":"新增技能"}</h3>
+    <div class="f-group"><label class="lab">名稱</label><input class="field" id="sk-name" value="${s?esc(s.name):""}" placeholder="例：小提琴"></div>
+    <div class="f-group"><label class="lab">分類</label><select class="field" id="sk-cat">${CATS.map(c=>'<option '+(s&&s.category===c?"selected":"")+'>'+c+'</option>').join("")}</select></div>
+    <div class="f-group"><label class="lab">場地限制</label><select class="field" id="sk-venue">
+      <option value="anywhere" ${!s||s.venue==="anywhere"?"selected":""}>隨處</option>
+      <option value="weekend" ${s&&s.venue==="weekend"?"selected":""}>限假日</option>
+      <option value="weekday" ${s&&s.venue==="weekday"?"selected":""}>限平日</option></select></div>
+    <div class="f-group"><label class="lab">權重（P3＝排最多）</label><select class="field" id="sk-pri">${[1,2,3].map(n=>'<option value="'+n+'" '+((s?s.priority:2)===n?"selected":"")+'>P'+n+'</option>').join("")}</select></div>
+    <button class="btn gold full" id="sk-save">${s?"儲存":"加入"}</button>
+    ${s?'<button class="btn ghost full mt" id="sk-del" style="color:var(--brick)">刪除</button>':""}`);
+  $("#sk-save").onclick=()=>{const name=$("#sk-name").value.trim();if(!name)return toast("先取個名字");
+    const data={name,category:$("#sk-cat").value,venue:$("#sk-venue").value,priority:+$("#sk-pri").value};
+    if(s)Object.assign(s,data);else S.skills.push(Object.assign({id:uid(),active:false,starve:0},data));
+    save();renderSkill();closeSheet();};
+  if(s)$("#sk-del").onclick=()=>{S.skills=S.skills.filter(x=>x.id!==s.id);stripSkillFromWeek(s.id);save();renderSkill();renderHome();closeSheet();};
+}
+function sheetPart(edit){const p=edit?S.parts.find(x=>x.name===edit):null;
+  openSheet(`<h3>${p?"編輯部位":"新增部位"}</h3>
+    <div class="f-group"><label class="lab">名稱</label><input class="field" id="pt-name" value="${p?esc(p.name):""}" placeholder="例：前臂" ${p?"readonly":""}></div>
+    <div class="f-group"><label class="lab">權重（P3＝練最多，上限仍為每週 3 次）</label><select class="field" id="pt-pri">${[1,2,3].map(n=>'<option value="'+n+'" '+((p?p.priority:2)===n?"selected":"")+'>P'+n+'</option>').join("")}</select></div>
+    <button class="btn gold full" id="pt-save">${p?"儲存":"加入"}</button>
+    ${p?'<button class="btn ghost full mt" id="pt-del" style="color:var(--brick)">刪除</button>':""}`);
+  $("#pt-save").onclick=()=>{const name=$("#pt-name").value.trim();if(!name)return toast("先取個名字");
+    if(p){p.priority=+$("#pt-pri").value;}else{if(S.parts.some(x=>x.name===name))return toast("已存在");S.parts.push({name,priority:+$("#pt-pri").value,active:false});
+      if(!PART_COLOR[name]){const pal=["#C9B27A","#D98E6A","#8FB08A","#7FA8C9","#C98AB4","#B59CD9"];const col=pal[S.parts.length%pal.length];PART_COLOR[name]=col;S.partColors[name]=col;}}
+    save();renderFit();closeSheet();};
+  if(p)$("#pt-del").onclick=()=>{S.parts=S.parts.filter(x=>x.name!==p.name);stripPartFromWeek(p.name);save();renderFit();renderHome();closeSheet();};
+}
+function sheetLedger(){
+  openSheet(`<h3>記一筆</h3>
+    <div class="grid2 f-group"><button class="chip on" id="l-inc" style="background:var(--gold);border-color:var(--gold);color:#231703">收入</button><button class="chip" id="l-exp">支出</button></div>
+    <div class="f-group"><label class="lab">金額</label><input class="field mono" id="l-amt" type="number" inputmode="numeric" placeholder="0"></div>
+    <div class="f-group"><label class="lab">來源</label><select class="field" id="l-src">${["正職薪水","合約外快","做單","其他"].map(c=>'<option>'+c+'</option>').join("")}</select></div>
+    <div class="f-group"><label class="lab">備註</label><input class="field" id="l-note" placeholder="選填"></div>
+    <button class="btn gold full" id="l-save">儲存</button>`);
+  let ty="income";
+  $("#l-inc").onclick=()=>{ty="income";$("#l-inc").style.cssText="background:var(--gold);border-color:var(--gold);color:#231703";$("#l-exp").style.cssText="";};
+  $("#l-exp").onclick=()=>{ty="expense";$("#l-exp").style.cssText="background:var(--brick);border-color:var(--brick);color:#2a0d15";$("#l-inc").style.cssText="";};
+  $("#l-save").onclick=()=>{const a=+$("#l-amt").value;if(!a||a<0)return toast("金額怪怪的");
+    S.ledger.push({id:uid(),type:ty,amount:a,source:$("#l-src").value,note:$("#l-note").value.trim(),date:todayISO});
+    save();renderMoney();renderHome();closeSheet();toast("已記帳");};
+}
+function sheetBuy(){openSheet(`<h3>想要的東西</h3>
+    <div class="f-group"><label class="lab">品項</label><input class="field" id="b-name" placeholder="例：iPhone 17 Pro Max"></div>
+    <div class="f-group"><label class="lab">售價</label><input class="field mono" id="b-price" type="number" inputmode="numeric" placeholder="0"></div>
+    <button class="btn gold full" id="b-save">加入</button>
+    <div class="hint">解鎖門檻＝售價 × 儲備倍率（目前 ${S.mult}）。純自評，不碰銀行帳號。</div>`);
+  $("#b-save").onclick=()=>{const name=$("#b-name").value.trim(),price=+$("#b-price").value;if(!name||!price)return toast("填品項跟售價");
+    S.cart.push({id:uid(),name,price});save();renderMoney();closeSheet();};}
+function sheetTrade(mode){const tt=T();
+  if((mode==="trade"||mode==="wd")&&tt.principal<=0){toast("先設定本金線");return sheetTrParams();}
+  const titles={trade:"記錄打量",wd:"出金（給經驗）",dep:"入金（放大本金線）"};
+  const hints={trade:"累積打量獲利，之後照比例提醒你該出多少金。",
+    wd:`出金＝提出「可出獲利」，給經驗、升級；帳上總額跟著降但不會跌破本金線、不算虧損。目前可出獲利 <b>${money(trProfitAvail())}</b>。要動本金請用「出本金」。`,
+    dep:`目前本金線 ${money(tt.principal)}。入金會<b>疊加</b>本金線、放大升級門檻，但<b>等級與經驗不變</b>；記為「成本」不算支出。`};
+  openSheet(`<h3>${titles[mode]}</h3><div class="f-group"><label class="lab">金額</label><input class="field mono" id="x-amt" type="number" inputmode="numeric" placeholder="0"></div>
+    <div class="hint">${hints[mode]}</div><button class="btn gold full mt" id="x-ok">確認</button>`);
+  $("#x-ok").onclick=()=>{const a=+$("#x-amt").value;if(!a||a<0)return toast("金額怪怪的");
+    if(mode==="trade"){tt.pendingProfit+=a;}
+    if(mode==="wd"){if(a>trProfitAvail())return toast("可出獲利只有 "+money(trProfitAvail())+"，要動本金請用出本金");
+      const before=tt.level;trWithdraw(a);tt.pendingProfit=Math.max(0,tt.pendingProfit-a);
+      S.ledger.push({id:uid(),type:"income",amount:a,source:"做單",note:"出金",date:todayISO});
+      if(tt.level>before)toast("升級 Lv."+tt.level);}
+    if(mode==="dep"){tt.principal+=a;S.ledger.push({id:uid(),type:"cost",amount:a,source:"做單",note:"入金",date:todayISO});toast("本金線 → "+money(tt.principal));}
+    save();renderMoney();renderHome();closeSheet();if(mode==="trade")toast("已記錄");};
+}
+function sheetPnl(){const tt=T();
+  openSheet(`<h3>輸入盈虧</h3>
+    <div class="f-group"><label class="lab">這一筆盈虧（正＝賺、負＝賠）</label><input class="field mono" id="pl-amt" type="number" inputmode="numeric" placeholder="例：+500 或 -60"></div>
+    <div class="row wrap" style="gap:8px;margin-bottom:10px">${[100,500,1000,-100,-500,-1000].map(v=>'<button class="chip" data-pl="'+v+'">'+(v>0?"+":"")+v+'</button>').join("")}</div>
+    <button class="btn gold full" id="pl-ok">加入今日</button>
+    <div class="hint">直接加減帳上總額並記進今天的盈虧。跌破本金線會扣經驗並常駐提醒。純紀錄、不影響「可用餘額」。</div>`);
+  $$('[data-pl]').forEach(b=>b.onclick=()=>{$("#pl-amt").value=b.dataset.pl;});
+  $("#pl-ok").onclick=()=>{const a=+$("#pl-amt").value;if(!a)return toast("輸入盈虧金額");
+    tt.pnlSum=(tt.pnlSum||0)+a;tt.pnlDaily=tt.pnlDaily||{};tt.pnlDaily[todayISO]=(tt.pnlDaily[todayISO]||0)+a;
+    const wasBreach=tt.breachActive;trAfterAccount();
+    save();renderMoney();closeSheet();
+    if(tt.breachActive&&!wasBreach)toast("⚠ 虧到本金了");else if(!tt.breachActive&&wasBreach)toast("已回到本金線上");else toast("已記錄盈虧");};
+}
+function sheetDrawPrincipal(){const tt=T();
+  if(tt.principal<=0){toast("目前沒有本金線");return;}
+  openSheet(`<h3>出本金</h3>
+    <div class="small muted" style="margin-bottom:12px">目前本金線 ${money(tt.principal)}。領走本金＝把本金線往下調，升級門檻按比例縮小；<b>等級與經驗不變</b>。</div>
+    <div class="f-group"><label class="lab">領走多少本金</label><input class="field mono" id="dp-amt" type="number" inputmode="numeric" placeholder="0"></div>
+    <button class="btn full" id="dp-ok" style="color:var(--brick);border-color:var(--brick)">確認出本金</button>
+    <div class="hint">領回的本金記為「成本」回沖，不進可用餘額當收入。</div>`);
+  $("#dp-ok").onclick=()=>{const a=+$("#dp-amt").value;if(!a||a<0)return toast("金額怪怪的");
+    tt.principal=Math.max(0,tt.principal-a);
+    S.ledger.push({id:uid(),type:"cost",amount:a,source:"做單",note:"出本金",date:todayISO});
+    trAfterAccount();save();renderMoney();renderHome();closeSheet();toast("本金線 → "+money(tt.principal));};
+}
+function sheetTrParams(){const tt=T();
+  openSheet(`<h3>本金與比例設定</h3>
+    <div class="f-group"><label class="lab">本金線（直接設定）</label><input class="field mono" id="p-prin" value="${tt.principal}"></div>
+    <div class="grid2">
+      <div class="f-group"><label class="lab">單筆風險 %</label><input class="field mono" id="p-risk" value="${tt.riskPct*100}"></div>
+      <div class="f-group"><label class="lab">風報比 1:</label><input class="field mono" id="p-rr" value="${tt.rr}"></div>
+      <div class="f-group"><label class="lab">升級門檻 %（×等級）</label><input class="field mono" id="p-th" value="${tt.threshPct*100}"></div>
+      <div class="f-group"><label class="lab">保證金 %（×等級）</label><input class="field mono" id="p-mg" value="${tt.marginPct*100}"></div>
+    </div>
+    <div class="f-group"><label class="lab">出金比例 %（打量 ×）</label><input class="field mono" id="p-wr" value="${tt.withdrawRatio*100}"></div>
+    <button class="btn gold full" id="p-save">儲存</button>`);
+  $("#p-save").onclick=()=>{tt.principal=Math.max(0,+$("#p-prin").value||0);tt.riskPct=(+$("#p-risk").value||2)/100;tt.rr=+$("#p-rr").value||2;
+    tt.threshPct=(+$("#p-th").value||15)/100;tt.marginPct=(+$("#p-mg").value||25)/100;tt.withdrawRatio=Math.min(1,Math.max(0,(+$("#p-wr").value||30)/100));
+    trAfterAccount();save();renderMoney();closeSheet();toast("已更新");};
+}
+
+/* ================= 匯出 / 匯入 ================= */
+function exportData(){
+  S.lastBackup=Date.now();save();
+  const blob=new Blob([JSON.stringify(S)],{type:"application/json"});
+  const url=URL.createObjectURL(blob);const a=document.createElement("a");
+  a.href=url;a.download="全系統管理-backup-"+todayISO.replace(/-/g,"")+".json";
+  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  toast("已匯出備份檔");
+}
+function importData(file){const r=new FileReader();
+  r.onload=()=>{try{const d=JSON.parse(r.result);if(!d.skills||!d.trading)throw 0;
+    S=Object.assign(seed(),d);save();location.reload();
+  }catch(e){toast("檔案格式不對");}};
+  r.readAsText(file);
+}
+
+/* ================= 事件 ================= */
+$$("#tabs button").forEach(b=>b.onclick=()=>{const go=b.dataset.go;
+  $$("#tabs button").forEach(x=>x.classList.toggle("on",x===b));
+  $$(".view").forEach(v=>v.classList.remove("on"));$("#v-"+go).classList.add("on");window.scrollTo(0,0);
+  if(go==="home"){renderHome();renderGoals();}});
+
+$("#btn-add-skill").onclick=()=>sheetSkill(null);
+$("#btn-add-part").onclick=()=>sheetPart(null);
+$("#btn-add-ledger").onclick=sheetLedger;
+$("#btn-add-buy").onclick=sheetBuy;
+$("#tr-b-trade").onclick=()=>sheetTrade("trade");
+$("#tr-b-wd").onclick=()=>sheetTrade("wd");
+$("#tr-b-dep").onclick=()=>sheetTrade("dep");
+$("#tr-b-pnl").onclick=sheetPnl;
+$("#tr-b-drawp").onclick=sheetDrawPrincipal;
+$("#tr-settings").onclick=sheetTrParams;
+$("#btn-save-mult").onclick=()=>{S.mult=Math.max(1,+$("#buy-mult").value||1.5);save();renderMoney();renderHome();toast("已套用");};
+$("#btn-add-blk").onclick=()=>{const from=$("#blk-from").value,to=$("#blk-to").value||from;if(!from)return toast("選日期");
+  S.blocks.push({id:uid(),from,to:to<from?from:to});save();renderSkill();$("#blk-from").value="";$("#blk-to").value="";};
+$("#btn-export").onclick=exportData;$("#btn-import").onclick=()=>$("#import-file").click();
+$("#import-file").onchange=e=>{if(e.target.files[0])importData(e.target.files[0]);};
+$("#btn-rebuild-skill").onclick=()=>{ensureWeek();rebuildSkills();renderSkill();renderHome();toast("已依目前設定重排技能");};
+$("#btn-rebuild-fit").onclick=()=>{ensureWeek();rebuildFit();renderFit();renderHome();toast("已依目前設定重排體能");};
+$("#btn-add-goal").onclick=sheetGoal;
+$("#btn-add-task").onclick=sheetTask;
+
+document.body.addEventListener("click",e=>{
+  const el=e.target.closest("[data-rbar],[data-rperiod],[data-rtab],[data-tog-skill],[data-edit-skill],[data-tog-part],[data-edit-part],[data-del-blk],[data-del-led],[data-del-buy],[data-start],[data-stop],[data-day],[data-mtab],[data-done-goal],[data-del-goal],[data-done-task],[data-del-task],#mn-mode-m,#mn-mode-q,[data-led-pg],[data-led-m]");
+  if(!el)return;
+  if(el.dataset.rbar){rbarOpen[el.dataset.rbar]=!rbarOpen[el.dataset.rbar];el.classList.toggle("open");}
+  else if(el.dataset.rperiod){const [kind,pd]=el.dataset.rperiod.split(":");rateState[kind].period=pd;
+    if(kind==="skill")renderHistSkill();else renderHistFit();}
+  else if(el.dataset.rtab){const [kind,t,v]=el.dataset.rtab.split(":");
+    if(t==="m"){rateState[kind].m=+v;rateState[kind].sunday=null;} // 換月 → 週選擇重置到新月
+    else rateState[kind].sunday=v;
+    if(kind==="skill")renderHistSkill();else renderHistFit();}
+  else if(el.dataset.togSkill){const s=S.skills.find(x=>x.id===el.dataset.togSkill);s.active=!s.active;save();renderSkill();}
+  else if(el.dataset.editSkill)sheetSkill(el.dataset.editSkill);
+  else if(el.dataset.togPart){const p=S.parts.find(x=>x.name===el.dataset.togPart);p.active=!p.active;save();renderFit();}
+  else if(el.dataset.editPart)sheetPart(el.dataset.editPart);
+  else if(el.dataset.delBlk){S.blocks=S.blocks.filter(x=>x.id!==el.dataset.delBlk);save();renderSkill();}
+  else if(el.dataset.delLed){S.ledger=S.ledger.filter(x=>x.id!==el.dataset.delLed);save();renderMoney();renderHome();}
+  else if(el.dataset.ledPg){ledPage+=(+el.dataset.ledPg);renderMoney();}
+  else if(el.dataset.ledM){const per=5,rev=S.ledger.slice().reverse();
+    const cur=rev.length?rev[Math.min(Math.max(ledPage,0)*per,rev.length-1)].date.slice(0,7):null;
+    const y=cur?+cur.slice(0,4):new Date().getFullYear();const key=y+"-"+pad(+el.dataset.ledM);
+    const idx=rev.findIndex(e=>e.date.slice(0,7)===key);if(idx>=0){ledPage=Math.floor(idx/per);renderMoney();}}
+  else if(el.dataset.delBuy){S.cart=S.cart.filter(x=>x.id!==el.dataset.delBuy);save();renderMoney();}
+  else if(el.dataset.start){const it=allItems().find(o=>o.it.id===el.dataset.start);if(it)sheetTimer(it.it,it.type);}
+  else if(el.dataset.stop){const it=allItems().find(o=>o.it.id===el.dataset.stop);if(it&&it.it.timer)sheetStopTimer(it.it,it.type);}
+  else if(el.dataset.day){calState.sel=el.dataset.day;renderDiary();}
+  else if(el.dataset.doneGoal){const g=(S.goals[goalState.y]||[]).find(x=>x.id===el.dataset.doneGoal);if(g&&!g.done){g.done=true;save();renderGoals();toast("已完成");}}
+  else if(el.dataset.delGoal){S.goals[goalState.y]=(S.goals[goalState.y]||[]).filter(x=>x.id!==el.dataset.delGoal);save();renderGoals();}
+  else if(el.dataset.doneTask){const t=(S.tasks[calState.sel]||[]).find(x=>x.id===el.dataset.doneTask);if(t&&!t.done){t.done=true;save();renderDiary();}}
+  else if(el.dataset.delTask){S.tasks[calState.sel]=(S.tasks[calState.sel]||[]).filter(x=>x.id!==el.dataset.delTask);if(!S.tasks[calState.sel].length)delete S.tasks[calState.sel];save();renderDiary();}
+  else if(el.dataset.mtab){const k=el.dataset.mtab;
+    if(el.dataset.q)histState[k].q=+el.dataset.q;else histState[k].m=+el.dataset.m;
+    renderHistMoney();}
+  else if(el.id==="mn-mode-m"){histState.mn.mode="month";renderHistMoney();}
+  else if(el.id==="mn-mode-q"){histState.mn.mode="quarter";renderHistMoney();}
+});
+document.body.addEventListener("change",e=>{
+  if(e.target.id==="sk-rate-year"){rateState.skill.y=+e.target.value;rateState.skill.sunday=null;renderHistSkill();}
+  if(e.target.id==="ft-rate-year"){rateState.fit.y=+e.target.value;rateState.fit.sunday=null;renderHistFit();}
+  if(e.target.id==="mn-year-sel"){histState.mn.y=+e.target.value;renderHistMoney();}
+  if(e.target.id==="goal-year-sel"){goalState.y=+e.target.value;renderGoals();}
+  if(e.target.id==="led-year"){const per=5,y=+e.target.value,rev=S.ledger.slice().reverse();
+    const idx=rev.findIndex(e=>+e.date.slice(0,4)===y);if(idx>=0){ledPage=Math.floor(idx/per);renderMoney();}}
+});
+// 日誌
+$("#cal-prev").onclick=()=>{calState.m--;if(calState.m<0){calState.m=11;calState.y--;}renderDiary();};
+$("#cal-next").onclick=()=>{calState.m++;if(calState.m>11){calState.m=0;calState.y++;}renderDiary();};
+$("#cal-jump-btn").onclick=()=>{const v=$("#cal-jump").value;if(!v)return;const d=new Date(v+"T00:00:00");calState.y=d.getFullYear();calState.m=d.getMonth();calState.sel=v;renderDiary();};
+$("#diary-text").addEventListener("input",e=>{$("#diary-count").textContent=e.target.value.length+"/1000";});
+$("#diary-save").onclick=()=>{S.diary[calState.sel]=$("#diary-text").value;save();renderDiary();toast("已儲存日誌");};
+
+/* 回到前景時重新同步：跨午夜換日、補排新週、續跑計時器 */
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState!=="visible")return;
+  const prev=todayISO;ensureWeek();
+  if(calState.sel===prev){calState.sel=todayISO;calState.y=new Date().getFullYear();calState.m=new Date().getMonth();}
+  renderAll();resumeTimers();});
+
+/* 鎖定縮放 */
+["gesturestart","gesturechange","gestureend"].forEach(ev=>document.addEventListener(ev,e=>e.preventDefault(),{passive:false}));
+document.addEventListener("touchmove",e=>{if(e.scale&&e.scale!==1)e.preventDefault();},{passive:false});
+
+/* 請求持久化儲存：讓瀏覽器盡量別在存儲壓力/閒置時清掉本站資料（非萬靈丹，但實測能降低被清機率） */
+try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist();}catch(e){}
+
+/* 啟動 */
+ensureWeek();
+ensureGoalYear();
+renderAll();
+</script>
+</body>
+</html>
