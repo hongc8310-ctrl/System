@@ -184,6 +184,34 @@ label.lab{font-size:11.5px;color:var(--muted);display:block;margin:0 0 5px 2px}
 .hint{font-size:11.5px;color:var(--faint);line-height:1.55;margin-top:8px}
 .toast{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%) translateY(20px);background:var(--panel2);border:1px solid var(--gold-d);color:var(--txt);padding:11px 20px;border-radius:99px;font-size:13px;font-weight:600;opacity:0;pointer-events:none;transition:.25s;z-index:60;white-space:nowrap;max-width:90vw}
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+/* 身體數據試算 */
+.bd-sec{font-size:10px;font-family:var(--mono);letter-spacing:.14em;color:var(--faint);margin:14px 0 7px}
+.bd-sec:first-of-type{margin-top:4px}
+.bd-sex{display:flex;gap:6px}.bd-sex .chip{flex:1;cursor:pointer}
+.bd-out{margin-top:16px;border-top:1px solid var(--line2);padding-top:6px}
+.bd-row{display:flex;align-items:center;gap:8px;padding:10px 0;border-top:1px solid var(--line)}
+.bd-row:first-child{border-top:none}
+.bd-row .k{font-size:12.5px;color:var(--muted);flex:none;width:72px}
+.bd-row .v{font-family:var(--mono);font-size:15px;font-weight:700;flex:1;min-width:0}
+.bd-row .v small{font-size:11px;color:var(--muted);font-weight:500}
+.lv{font-size:11px;padding:2px 8px;border-radius:99px;font-weight:700;flex:none;border:1px solid;white-space:nowrap}
+.lv.g{color:#7BC47F;border-color:rgba(123,196,127,.45);background:rgba(123,196,127,.1)}
+.lv.o{color:#E8A04A;border-color:rgba(232,160,74,.45);background:rgba(232,160,74,.1)}
+.lv.r{color:#E5625B;border-color:rgba(229,98,91,.5);background:rgba(229,98,91,.12)}
+.lv.n{color:var(--gold);border-color:var(--gold-d);background:rgba(232,188,94,.08)}
+.qbtn{width:24px;height:24px;border-radius:99px;border:1px solid var(--line2);color:var(--muted);font-size:12px;font-weight:700;flex:none;font-family:var(--mono)}
+.qbtn:active{background:var(--panel2)}
+.bd-zones{display:flex;flex-direction:column;gap:5px;padding:0 0 10px}
+.bd-z{display:flex;align-items:center;gap:8px;font-size:12px}
+.bd-z i{width:4px;height:16px;border-radius:2px;flex:none}
+.bd-z .zn{width:62px;color:var(--muted)}.bd-z .zp{width:58px;color:var(--faint);font-family:var(--mono);font-size:11px}
+.bd-z b{font-family:var(--mono);margin-left:auto}
+.bd-lock{font-size:11.5px;color:var(--faint);line-height:1.7;padding:10px 0 2px;border-top:1px dashed var(--line)}
+.bd-lock b{color:var(--khaki);font-weight:600}
+.bd-ex{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.ex-tb{width:100%;border-collapse:collapse;font-size:12.5px;margin:8px 0}
+.ex-tb td{padding:6px 4px;border-top:1px solid var(--line)}.ex-tb td:last-child{text-align:right;font-family:var(--mono)}
+.ex-p{font-size:13px;line-height:1.7;color:var(--muted);margin:0 0 8px}.ex-p b{color:var(--txt)}
 </style>
 </head>
 <body>
@@ -340,6 +368,33 @@ label.lab{font-size:11.5px;color:var(--muted);display:block;margin:0 0 5px 2px}
     <div id="ft-rate-sum"></div>
     <div class="hint">分母＝排進去的次數，分子＝完成（計時器跑完計入）。100% 滿條不可展開；未滿可點開只列未完成項。</div>
   </div>
+<div class="card" id="bd-card">
+<div class="eyebrow">身體數據 · 粗估試算</div>
+<div class="hint" style="margin-top:-6px">填越多、算越多。全部自動儲存，下次只改體重就好。點 ? 看正常區間與用途。</div>
+<div class="bd-sec">基本</div>
+<div class="grid3">
+<div><label class="lab">身高 cm</label><input class="field mono" id="bd-h" type="number" inputmode="decimal"></div>
+<div><label class="lab">體重 kg</label><input class="field mono" id="bd-w" type="number" inputmode="decimal"></div>
+<div><label class="lab">年齡</label><input class="field mono" id="bd-age" type="number" inputmode="numeric"></div>
+</div>
+<div class="grid2 mt">
+<div><label class="lab">性別</label><div class="bd-sex"><button class="chip" data-bd-sex="m">男</button><button class="chip" data-bd-sex="f">女</button></div></div>
+<div><label class="lab">平常活動量</label><select class="field" id="bd-act"><option value="">未選</option><option value="1.2">久坐少動</option><option value="1.375">輕度 1–3天/週</option><option value="1.55">中度 3–5天/週</option><option value="1.725">高度 6–7天/週</option><option value="1.9">極高 勞力/一天兩練</option></select></div>
+</div>
+<div class="bd-sec">圍度 · 皮尺 cm</div>
+<div class="grid3">
+<div><label class="lab">腰圍</label><input class="field mono" id="bd-waist" type="number" inputmode="decimal"></div>
+<div><label class="lab">頸圍</label><input class="field mono" id="bd-neck" type="number" inputmode="decimal"></div>
+<div><label class="lab">臀圍(女)</label><input class="field mono" id="bd-hip" type="number" inputmode="decimal"></div>
+</div>
+<div class="bd-sec">心率 · 肌力</div>
+<div class="grid3">
+<div><label class="lab">安靜心率</label><input class="field mono" id="bd-rhr" type="number" inputmode="numeric" placeholder="bpm"></div>
+<div><label class="lab">訓練重量</label><input class="field mono" id="bd-lw" type="number" inputmode="decimal" placeholder="kg"></div>
+<div><label class="lab">做幾下</label><input class="field mono" id="bd-lr" type="number" inputmode="numeric" placeholder="次"></div>
+</div>
+<div class="bd-out" id="bd-out"></div>
+</div>
 </section>
 
 <!-- 日誌 -->
@@ -718,6 +773,7 @@ function renderSkill(){
 function renderBlocks(){$("#blk-list").innerHTML=S.blocks.length?S.blocks.map(b=>`<div class="item"><span class="grow small">${b.from} → ${b.to}</span><button class="iconbtn" data-del-blk="${b.id}">刪除</button></div>`).join(""):`<div class="faint tiny" style="padding:4px 2px">目前沒有排除日</div>`;}
 
 function renderFit(){
+  if(typeof renderBody==="function"&&$("#bd-out"))renderBody();
   $("#part-list").innerHTML=S.parts.map(p=>`<div class="item">
     <span class="dot" style="background:${PART_COLOR[p.name]||'var(--muted)'}"></span>
     <div class="grow"><div class="nm">${esc(p.name)}</div></div>
@@ -1241,6 +1297,87 @@ document.addEventListener("touchmove",e=>{if(e.scale&&e.scale!==1)e.preventDefau
 
 /* 請求持久化儲存：讓瀏覽器盡量別在存儲壓力/閒置時清掉本站資料（非萬靈丹，但實測能降低被清機率） */
 try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist();}catch(e){}
+
+/* ================= 身體數據試算 ================= */
+const BD_FIELDS=["h","w","age","act","waist","neck","hip","rhr","lw","lr"];
+S.body=Object.assign({sex:""},S.body||{});
+const bdN=k=>{const v=parseFloat(S.body[k]);return isFinite(v)&&v>0?v:null;};
+const r1=x=>Math.round(x*10)/10, r0=x=>Math.round(x);
+function bdTag(t,c){return `<span class="lv ${c}">${t}</span>`;}
+function bdRow(k,v,tag,q){return `<div class="bd-row"><span class="k">${k}</span><span class="v">${v}</span>${tag||""}<button class="qbtn" data-bd-q="${q}">?</button></div>`;}
+function bmiLv(b){if(b<18.5)return["過輕","o"];if(b<24)return["正常","g"];if(b<27)return["過重","o"];if(b<30)return["輕度肥胖","r"];if(b<35)return["中度肥胖","r"];return["重度肥胖","r"];}
+function whtrLv(x){if(x<.4)return["偏低","o"];if(x<.5)return["健康","g"];if(x<.6)return["偏高","o"];return["高風險","r"];}
+function rhrLv(x){if(x<40)return["偏低","o"];if(x<60)return["優秀","g"];if(x<=80)return["正常","g"];if(x<=100)return["偏高","o"];return["過高","r"];}
+function bfLv(bf,sex){const t=sex==="m"?[6,14,18,25]:[14,21,25,32];
+  if(bf<t[0])return["過低","o"];if(bf<t[1])return["運動員","g"];if(bf<t[2])return["健康","g"];if(bf<t[3])return["普通","n"];return["偏高","r"];}
+function bdExToday(){const ov=S.body.exDay;if(ov&&ov.date===todayISO)return{on:ov.on,auto:false};
+  const n=(S.week&&S.week.fit&&S.week.fit[todayISO]||[]).length;return{on:n>0,auto:n>0};}
+const ZONES=[["恢復",.5,.6,"#8F8A7A"],["燃脂",.6,.7,"#7BC47F"],["有氧",.7,.8,"#E8BC5E"],["閾值",.8,.9,"#E8A04A"],["極限",.9,1,"#E5625B"]];
+function renderBody(){
+  const b=S.body,h=bdN("h"),w=bdN("w"),age=bdN("age"),act=bdN("act"),waist=bdN("waist"),neck=bdN("neck"),hip=bdN("hip"),rhr=bdN("rhr"),lw=bdN("lw"),lr=bdN("lr"),sex=b.sex;
+  $$("[data-bd-sex]").forEach(x=>x.classList.toggle("on",x.dataset.bdSex===sex));
+  let o="",lock=[];
+  if(h&&w){const m=h/100,bmi=w/(m*m),[t,c]=bmiLv(bmi);
+    o+=bdRow("BMI",r1(bmi),bdTag(t,c),"bmi");
+    o+=bdRow("健康體重",`${r1(18.5*m*m)}–${r1(24*m*m)}<small> kg</small>`,"","hw");
+  }else lock.push("<b>身高＋體重</b> → BMI、健康體重範圍");
+  if(w){const ex=bdExToday(),add=ex.on?500:0;
+    o+=bdRow("每日飲水",`${r0(w*30+add)}–${r0(w*35+add)}<small> ml</small>`,ex.on?bdTag("含運動 +500","n"):"","water");
+    o+=`<div class="bd-ex"><div class="togg ${ex.on?"on":""}" data-bd-ex></div><span>今天有運動${ex.auto?"（課表已排體能，自動開啟）":""}</span></div>`;
+    o+=bdRow("蛋白質",`${r0(w*1.6)}–${r0(w*2.2)}<small> g/日</small>`,bdTag("重訓","n"),"protein");
+  }else lock.push("<b>體重</b> → 每日飲水、蛋白質");
+  if(age){const mx=208-0.7*age,useK=!!rhr;
+    o+=bdRow("最大心率",`${r0(mx)}<small> bpm</small>`,"","hrmax");
+    o+=bdRow("心率區間",`<small>${useK?"已用安靜心率校正":"填安靜心率會更準"}</small>`,"","zones");
+    o+=`<div class="bd-zones">${ZONES.map(([n,a,z,c])=>{const f=p=>r0(useK?rhr+p*(mx-rhr):p*mx);
+      return `<div class="bd-z"><i style="background:${c}"></i><span class="zn">${n}</span><span class="zp">${a*100}–${z*100}%</span><b>${f(a)}–${f(z)}</b></div>`;}).join("")}</div>`;
+  }else lock.push("<b>年齡</b> → 最大心率、燃脂等心率區間");
+  if(rhr){const[t,c]=rhrLv(rhr);o+=bdRow("安靜心率",`${r0(rhr)}<small> bpm</small>`,bdTag(t,c),"rhr");}
+  if(h&&w&&age&&sex){const bmr=10*w+6.25*h-5*age+(sex==="m"?5:-161);
+    o+=bdRow("基礎代謝",`${r0(bmr)}<small> kcal</small>`,"","bmr");
+    if(act)o+=bdRow("每日總消耗",`${r0(bmr*act)}<small> kcal</small>`,"","tdee");
+    else lock.push("<b>活動量</b> → 每日總消耗 TDEE");
+  }else lock.push("<b>身高＋體重＋年齡＋性別</b> → 基礎代謝 BMR");
+  if(waist&&h){const x=waist/h,[t,c]=whtrLv(x);o+=bdRow("腰高比",x.toFixed(2),bdTag(t,c),"whtr");
+    if(sex){const lim=sex==="m"?90:80;o+=bdRow("腰圍",`${r1(waist)}<small> cm</small>`,waist>=lim?bdTag("腹部肥胖","r"):bdTag("正常","g"),"waist");}
+  }else lock.push("<b>腰圍＋身高</b> → 腰高比、腹部肥胖判定");
+  if(h&&waist&&neck&&sex&&(sex==="m"||hip)){const L=Math.log10;
+    const bf=sex==="m"?495/(1.0324-0.19077*L(waist-neck)+0.15456*L(h))-450:495/(1.29579-0.35004*L(waist+hip-neck)+0.221*L(h))-450;
+    if(isFinite(bf)&&bf>2&&bf<60){const[t,c]=bfLv(bf,sex);o+=bdRow("體脂率",`${r1(bf)}<small> %</small>`,bdTag(t,c),"bf");
+      if(w)o+=bdRow("去脂體重",`${r1(w*(1-bf/100))}<small> kg</small>`,"","lbm");}
+    else o+=`<div class="bd-lock">體脂算不出合理值，檢查腰圍／頸圍有沒有量錯。</div>`;
+  }else lock.push(`<b>腰圍＋頸圍＋性別${sex==="f"?"＋臀圍":""}</b> → 體脂率（海軍公式）`);
+  if(lw&&lr){const rm=lw*(1+lr/30);
+    o+=bdRow("推估 1RM",`${r1(rm)}<small> kg</small>`,lr>12?bdTag("次數太多，不準","o"):"","orm");
+    o+=`<div class="bd-zones">${[["肌力",.85,"1–5 下"],["增肌",.75,"6–12 下"],["耐力",.6,"12 下以上"]].map(([n,p,rp])=>`<div class="bd-z"><i style="background:var(--gold-d)"></i><span class="zn">${n}</span><span class="zp">${rp}</span><b>~${r1(rm*p)} kg</b></div>`).join("")}</div>`;
+  }else lock.push("<b>訓練重量＋次數</b> → 最大肌力 1RM、訓練重量建議");
+  if(lock.length)o+=`<div class="bd-lock">再填可解鎖：<br>${lock.join("<br>")}</div>`;
+  $("#bd-out").innerHTML=o;
+}
+const BD_HELP={
+ bmi:["BMI 身體質量指數",`<p class="ex-p">體重(kg) ÷ 身高(m)²，用來快速篩檢體重是否落在健康範圍。</p>`,[["過輕","< 18.5"],["正常","18.5 – 24"],["過重","24 – 27"],["輕度肥胖","27 – 30"],["中度肥胖","30 – 35"],["重度肥胖","≥ 35"]],`<p class="ex-p"><b>限制：</b>分不出肌肉和脂肪。有在重訓的人常常被判「過重」，要搭配腰高比或體脂率一起看。區間採台灣國健署標準。</p>`],
+ hw:["健康體重範圍",`<p class="ex-p">用你的身高反推 BMI 落在 18.5–24 時對應的體重，比只看 BMI 數字直觀。肌肉量高的人超出上限不一定是問題。</p>`],
+ water:["每日飲水量",`<p class="ex-p">體重 × 30–35 ml，是一般成人的基本需求。運動每小時約再 +500 ml，大熱天或大量流汗再多補。</p>`,[["尿液淡黃","喝得剛好"],["深黃、量少","喝太少"],["完全透明、頻尿","可能喝過多"]],`<p class="ex-p">分次喝，不要一次灌一大瓶。有腎臟或心臟疾病的人請依醫師指示。</p>`],
+ protein:["蛋白質建議量",`<p class="ex-p">每公斤體重每日所需的蛋白質。</p>`,[["一般成人","0.8 – 1.0 g/kg"],["規律重訓／增肌","1.6 – 2.2 g/kg"]],`<p class="ex-p">分散到 3–4 餐，每餐 20–40 g 吸收利用較好。100 g 雞胸肉約 23 g、一顆蛋約 6–7 g 蛋白質。</p>`],
+ hrmax:["最大心率",`<p class="ex-p">用 208 − 0.7 × 年齡（Tanaka 公式）估算，比老派的 220 − 年齡準一點。個人差異大約 ±10 bpm，它是用來劃分心率區間的基準，不是目標。</p>`],
+ zones:["心率區間",`<p class="ex-p">運動時把心率維持在不同區間，訓練效果也不同。有填安靜心率時會改用 Karvonen 儲備心率法，比較貼近個人。</p>`,[["恢復 50–60%","熱身、緩和、恢復日"],["燃脂 60–70%","長時間慢跑、快走，脂肪供能比例高"],["有氧 70–80%","提升心肺耐力"],["閾值 80–90%","間歇、配速訓練，會很喘"],["極限 90–100%","衝刺，只能撐很短時間"]],`<p class="ex-p"><b>注意：</b>「燃脂區」是脂肪佔燃料的比例高，不代表燒掉的脂肪總量最多。減脂主要還是看長期總消耗。</p>`],
+ rhr:["安靜心率",`<p class="ex-p">早上醒來、還沒起床時量 60 秒。長期下降通常代表心肺變好；突然比平常高 5–10 下，可能是疲勞、睡不好或快生病，當天可以練輕一點。</p>`,[["< 60","優秀（耐力運動者常見）"],["60 – 80","正常"],["80 – 100","偏高"],["> 100","過高，建議就醫確認"]]],
+ bmr:["基礎代謝 BMR",`<p class="ex-p">整天躺著不動，維持生命所需的熱量（Mifflin-St Jeor 公式）。長期吃得比這個少，容易掉肌肉、精神差。</p>`],
+ tdee:["每日總消耗 TDEE",`<p class="ex-p">基礎代謝 × 活動係數，也就是一天大約會用掉的熱量。長期吃到這個數字附近，體重大致會維持不變。活動量最容易高估，不確定時選低一級。</p>`],
+ whtr:["腰高比",`<p class="ex-p">腰圍 ÷ 身高。原則很簡單：<b>腰圍不要超過身高的一半</b>。比 BMI 更能反映內臟脂肪。量法：肚臍高度、自然吐氣後量。</p>`,[["< 0.40","偏低"],["0.40 – 0.50","健康"],["0.50 – 0.60","偏高"],["≥ 0.60","高風險"]]],
+ waist:["腰圍",`<p class="ex-p">台灣國健署的腹部肥胖判定標準，和代謝症候群、心血管風險直接相關。</p>`,[["男性","≥ 90 cm 為腹部肥胖"],["女性","≥ 80 cm 為腹部肥胖"]]],
+ bf:["體脂率（美國海軍公式）",`<p class="ex-p">用身高與圍度推估，誤差約 ±3–4%，適合看自己的長期趨勢，不適合跟別人比。量法：頸圍量喉結下方；腰圍男性量肚臍高度、女性量最細處；臀圍量最寬處。</p>`,[["男 過低／女 過低","<6％／<14％"],["運動員","6–13％／14–20％"],["健康","14–17％／21–24％"],["普通","18–24％／25–31％"],["偏高","≥25％／≥32％"]]],
+ lbm:["去脂體重",`<p class="ex-p">體重扣掉脂肪後剩下的部分（肌肉、骨骼、水分、內臟）。增肌期看這個有沒有上升，比看體重準。</p>`],
+ orm:["推估 1RM 最大肌力",`<p class="ex-p">用「某重量做幾下」推算只能做 1 下的最大重量（Epley 公式），不用真的去挑戰極限、比較安全。<b>10 下以內最準</b>，超過 12 下誤差很大。</p>`,[["肌力 85–100%","1–5 下，組間休 2–5 分"],["增肌 67–85%","6–12 下，組間休 1–2 分"],["耐力 < 67%","12 下以上，組間休 < 1 分"]]],
+};
+function bdHelp(k){const[t,a,tb,c]=BD_HELP[k];
+  openSheet(`<h3>${t}</h3>${a||""}${tb?`<table class="ex-tb">${tb.map(([x,y])=>`<tr><td>${x}</td><td>${y}</td></tr>`).join("")}</table>`:""}${c||""}<p class="hint">所有數值皆為公式粗估，不能取代醫療或專業檢測。</p><button class="btn full mt" onclick="closeSheet()">知道了</button>`);}
+BD_FIELDS.forEach(k=>{const el=$("#bd-"+k);if(!el)return;if(S.body[k]!=null)el.value=S.body[k];
+  el.addEventListener(el.tagName==="SELECT"?"change":"input",()=>{S.body[k]=el.value;save();renderBody();});});
+$("#bd-card").addEventListener("click",e=>{const q=e.target.closest("[data-bd-q]"),sx=e.target.closest("[data-bd-sex]"),ex=e.target.closest("[data-bd-ex]");
+  if(q)bdHelp(q.dataset.bdQ);
+  else if(sx){S.body.sex=S.body.sex===sx.dataset.bdSex?"":sx.dataset.bdSex;save();renderBody();}
+  else if(ex){S.body.exDay={date:todayISO,on:!bdExToday().on};save();renderBody();}});
 
 /* 啟動 */
 ensureWeek();
